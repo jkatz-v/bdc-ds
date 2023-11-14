@@ -1,5 +1,5 @@
 body {
-  font-family: "Kurdis", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
 }
 
@@ -8,23 +8,18 @@ img {
 }
 
 @font-face {
-  font-family: "Kurdis";
-  src: url("fonts/Kurdis-Regular.woff2") format("woff2"), url("fonts/Kurdis-Regular.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
   font-family: "Kurdis-Condensed";
   src: url("fonts/Kurdis-Condensed.woff2") format("woff2"), url("fonts/Kurdis-Condensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Kurdis-Bold";
-  src: url("fonts/Kurdis-Bold.woff2") format("woff2"), url("fonts/Kurdis-Bold.woff") format("woff");
+  font-family: "Kurdis-CondensedSemiBold";
+  src: url("fonts/Kurdis-CondensedSemiBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedSemiBold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Kurdis-ExtraBold";
-  src: url("fonts/Kurdis-ExtraBold.woff2") format("woff2"), url("fonts/Kurdis-ExtraBold.woff") format("woff");
+  font-family: "Kurdis-SemiCondensed";
+  src: url("fonts/Kurdis-SemiCondensed.woff2") format("woff2"), url("fonts/Kurdis-SemiCondensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
@@ -37,8 +32,13 @@ img {
   src: url("fonts/Kurdis-CondensedBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedBold.woff") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "Kurdis-CondensedExtraBold";
+  src: url("fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedExtraBold.woff") format("woff");
+  font-display: swap;
+}
 .container {
-  max-width: 1380px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -186,7 +186,7 @@ img {
 #burger-menu span,
 #burger-menu span:before,
 #burger-menu span:after {
-  background: #fff;
+  background: url(imgs/burger-menu.svg);
   display: block;
   height: 4px;
   opacity: 1;
@@ -202,19 +202,19 @@ img {
 #burger-menu span {
   right: 0px;
   top: 13px;
-  width: 27px;
+  width: 31px;
 }
 
 #burger-menu span:before {
   right: 0px;
   top: -10px;
-  width: 16px;
+  width: 31px;
 }
 
 #burger-menu span:after {
   right: 0px;
   top: 10px;
-  width: 20px;
+  width: 31px;
 }
 
 #burger-menu.close span {
@@ -303,32 +303,32 @@ img {
   position: relative;
 }
 #home-hero .hero-inner .hero-content {
-  width: 60%;
+  width: 45%;
   padding-top: 60px;
   z-index: 1;
 }
 #home-hero .hero-inner .hero-content .hero-subheader {
   font-family: "Kurdis-Condensed", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 5px;
 }
 #home-hero .hero-inner .hero-content .hero-header {
   font-family: "Kurdis-CondensedBold", sans-serif;
   text-transform: uppercase;
-  font-size: 110px;
+  font-size: 82px;
   line-height: 1;
   color: #343949;
 }
 #home-hero .hero-inner .hero-image {
-  max-width: 560px;
+  max-width: 430px;
   width: 40%;
   z-index: 0;
-  margin-right: -7vw;
+  margin-right: -9vw;
 }
 
 #hero-red-cta {
-  margin-top: -60px;
+  margin-top: -14vw;
 }
 #hero-red-cta .container {
   display: flex;
@@ -337,7 +337,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 57%;
   font-family: "Kurdis-Condensed", sans-serif;
   text-transform: uppercase;
   background-color: #C00004;
@@ -366,13 +366,14 @@ img {
 }
 #white-hero .w-hero-inner .w-hero-chess {
   margin-top: -220px;
-  margin-left: -5vw;
+  margin-left: -7vw;
 }
 #white-hero .w-hero-inner .w-hero-chess img {
   width: 260px;
 }
 #white-hero .w-hero-inner .w-hero-video {
-  padding-top: 50px;
+  padding-top: 70px;
+  padding-bottom: 8px;
   margin-left: -50px;
 }
 
@@ -390,10 +391,10 @@ img {
   width: 43%;
 }
 #what-do .content-row .content-col .what-header {
-  font-family: "Kurdis-CondensedBold", sans-serif;
+  font-family: "Kurdis-CondensedSemiBold", sans-serif;
   line-height: 1;
   text-transform: uppercase;
-  font-size: 66px;
+  font-size: 52px;
 }
 #what-do .content-row .content-col .what-header p {
   margin: 0;
@@ -402,17 +403,25 @@ img {
   display: flex;
   align-items: center;
   color: #ffffff;
-  font-family: "Kurdis-Condensed", sans-serif;
+  font-family: "Kurdis-CondensedSemiBold", sans-serif;
   text-transform: uppercase;
-  padding: 22px;
+  padding: 18px;
   border: none;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 0.9;
   margin-top: 40px;
+  letter-spacing: 1.2px;
 }
 #what-do .content-row .content-col button img {
   max-width: 13px;
+  margin-top: -1px;
   margin-left: 10px;
+}
+#what-do .content-row .line-col {
+  width: 35%;
+}
+#what-do .content-row .line-col img {
+  max-width: 280px;
 }
 #what-do .content-row .numbers-col .number-row {
   display: flex;
@@ -420,18 +429,18 @@ img {
 }
 #what-do .content-row .numbers-col .number-row .number-number {
   font-family: "Kurdis-Condensed", sans-serif;
-  font-size: 120px;
+  font-size: 90px;
   margin-right: 20px;
 }
 #what-do .content-row .numbers-col .number-row .number-row-content {
-  font-family: "Kurdis-Condensed", sans-serif;
+  font-family: "Kurdis-CondensedSemiBold", sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 23px;
 }
 #what-do .content-row .numbers-col .number-row .number-row-content-bold {
-  font-family: "Kurdis-ExtraBold", sans-serif;
+  font-family: "Kurdis-CondensedExtraBold", sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 23px;
 }
 #what-do .content-row .numbers-col .number-row.n-second {
   margin-left: -120px;
@@ -442,7 +451,10 @@ img {
 #what-do .content-row .float-line {
   position: absolute;
   top: -8%;
-  right: -8%;
+  right: 2%;
+}
+#what-do .content-row .float-line img {
+  max-width: 970px;
 }
 
 #portfolio-companies .portfolio-header {
@@ -637,9 +649,23 @@ footer {
   max-width: 420px;
 }
 
+.solutions-step {
+  margin: 100px auto;
+}
+
+.about-team {
+  margin: 100px auto;
+}
+
+.section-two-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .red-line-header {
   font-family: "Kurdis-Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #C00004;
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -650,14 +676,19 @@ footer {
   margin-right: 13px;
 }
 
+.section-content {
+  width: 50%;
+  max-width: 400px;
+}
+
 .support-title {
-  font-family: "Kurdis-Condensed", sans-serif;
-  font-size: 66px;
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: "Kurdis-CondensedSemiBold", sans-serif;
+  font-size: 52px;
+  line-height: 1.4;
   text-transform: uppercase;
   max-width: 350px;
   margin-top: 13px;
+  margin-bottom: 30px;
 }
 
 .support-copy {
@@ -668,4 +699,15 @@ footer {
   text-transform: uppercase;
   max-width: 460px;
   margin-top: 13px;
+}
+
+.support-paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.section-image {
+  width: 45%;
 }/*# sourceMappingURL=styles.css.map */

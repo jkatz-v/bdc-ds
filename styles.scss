@@ -1,17 +1,10 @@
 body {
-    font-family: 'Kurdis', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
 }
 
 img {
     width: 100%;
-}
-
-@font-face {
-    font-family: 'Kurdis';
-    src: url('fonts/Kurdis-Regular.woff2') format('woff2'),
-         url('fonts/Kurdis-Regular.woff') format('woff');
-    font-display: swap;
 }
 
 @font-face {
@@ -22,16 +15,16 @@ img {
 }  
 
 @font-face {
-    font-family: 'Kurdis-Bold';
-    src: url('fonts/Kurdis-Bold.woff2') format('woff2'),
-         url('fonts/Kurdis-Bold.woff') format('woff');
+    font-family: 'Kurdis-CondensedSemiBold';
+    src: url('fonts/Kurdis-CondensedSemiBold.woff2') format('woff2'),
+         url('fonts/Kurdis-CondensedSemiBold.woff') format('woff');
     font-display: swap;
 }  
 
 @font-face {
-    font-family: 'Kurdis-ExtraBold';
-    src: url('fonts/Kurdis-ExtraBold.woff2') format('woff2'),
-         url('fonts/Kurdis-ExtraBold.woff') format('woff');
+    font-family: 'Kurdis-SemiCondensed';
+    src: url('fonts/Kurdis-SemiCondensed.woff2') format('woff2'),
+         url('fonts/Kurdis-SemiCondensed.woff') format('woff');
     font-display: swap;
 }  
 
@@ -49,8 +42,15 @@ img {
     font-display: swap;
 } 
 
+@font-face {
+    font-family: 'Kurdis-CondensedExtraBold';
+    src: url('fonts/Kurdis-CondensedExtraBold.woff2') format('woff2'),
+         url('fonts/Kurdis-CondensedExtraBold.woff') format('woff');
+    font-display: swap;
+} 
+
 .container {
-    max-width: 1380px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
@@ -202,7 +202,7 @@ img {
   #burger-menu span,
   #burger-menu span:before,
   #burger-menu span:after {
-    background: #fff;
+    background: url(imgs/burger-menu.svg);
     display: block;
     height: 4px;
     opacity: 1;
@@ -216,17 +216,17 @@ img {
   #burger-menu span {
     right: 0px;
     top: 13px;
-    width: 27px;
+    width: 31px;
   }
   #burger-menu span:before {
     right: 0px;
     top: -10px;
-    width: 16px;
+    width: 31px;
   }
   #burger-menu span:after {
     right: 0px;
     top: 10px;
-    width: 20px;
+    width: 31px;
   }
   
   #burger-menu.close span {
@@ -323,31 +323,31 @@ img {
         position: relative;
 
         .hero-content {
-            width: 60%;
+            width: 45%;
             padding-top: 60px;
             z-index: 1;
 
             .hero-subheader {
                 font-family: "Kurdis-Condensed", sans-serif;
                 text-transform: uppercase;
-                font-size: 20px;
+                font-size: 16px;
                 letter-spacing: 5px;
             }
         
             .hero-header {
                 font-family: 'Kurdis-CondensedBold', sans-serif;
                 text-transform: uppercase;
-                font-size: 110px;
+                font-size: 82px;
                 line-height: 1.0;
                 color: #343949;
             }
         }
 
         .hero-image {
-            max-width: 560px;
+            max-width: 430px;
             width: 40%;
             z-index: 0;
-            margin-right: -7vw;
+            margin-right: -9vw;
         }
       
     }
@@ -355,7 +355,7 @@ img {
 }
 
 #hero-red-cta {
-    margin-top: -60px;
+    margin-top: -14vw;
 
     .container {
       display: flex;
@@ -364,7 +364,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 55%;
+        width: 57%;
         font-family: "Kurdis-Condensed", sans-serif;
         text-transform: uppercase;
         background-color: #C00004;
@@ -395,7 +395,7 @@ img {
 
         .w-hero-chess {
             margin-top: -220px;
-            margin-left: -5vw;
+            margin-left: -7vw;
             img {
                 width: 260px;
             }
@@ -404,7 +404,8 @@ img {
        
 
         .w-hero-video {
-            padding-top: 50px;
+            padding-top: 70px;
+            padding-bottom: 8px;
             margin-left: -50px;
         }
     }
@@ -424,10 +425,10 @@ img {
             width: 43%;
 
             .what-header {
-                font-family: 'Kurdis-CondensedBold', sans-serif;
+                font-family: 'Kurdis-CondensedSemiBold', sans-serif;
                 line-height: 1.0;
                 text-transform: uppercase;
-                font-size: 66px;
+                font-size: 52px;
 
                 p {
                     margin: 0;
@@ -438,17 +439,26 @@ img {
                 display: flex;
                 align-items: center;
                 color: #ffffff;
-                font-family: "Kurdis-Condensed", sans-serif;
+                font-family: "Kurdis-CondensedSemiBold", sans-serif;
                 text-transform: uppercase;
-                padding: 22px;
+                padding: 18px;
                 border: none;
-                font-size: 24px;
+                font-size: 18px;
                 line-height: .9;
                 margin-top: 40px;
+                letter-spacing: 1.2px;
                 img {
                     max-width: 13px;
+                    margin-top: -1px;
                     margin-left: 10px;
                 }
+            }
+        }
+
+        .line-col {
+            width: 35%;
+            img {
+                max-width: 280px;
             }
         }
 
@@ -459,20 +469,20 @@ img {
 
                 .number-number {
                     font-family: "Kurdis-Condensed", sans-serif;
-                    font-size: 120px;
+                    font-size: 90px;
                     margin-right: 20px;
                 }
 
                 .number-row-content {
-                    font-family: "Kurdis-Condensed", sans-serif;
+                    font-family: "Kurdis-CondensedSemiBold", sans-serif;
                     text-transform: uppercase;
-                    font-size: 30px;
+                    font-size: 23px;
                 }
 
                 .number-row-content-bold {
-                    font-family: "Kurdis-ExtraBold", sans-serif;
+                    font-family: "Kurdis-CondensedExtraBold", sans-serif;
                     text-transform: uppercase;
-                    font-size: 30px;
+                    font-size: 23px;
                 }
 
                 &.n-second {
@@ -487,7 +497,10 @@ img {
         .float-line {
             position: absolute;
             top: -8%;
-            right: -8%;
+            right: 2%;
+            img {
+                max-width: 970px;
+            }
         }
     }
 }
@@ -718,9 +731,25 @@ footer {
     }
 }
 }
+
+
+.solutions-step {
+    margin: 100px auto;
+}
+
+.about-team {
+    margin: 100px auto;
+}
+
+.section-two-cols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .red-line-header {
     font-family: "Kurdis-Condensed", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     color: #C00004;
     text-transform: uppercase;
     letter-spacing: 8px;
@@ -732,14 +761,19 @@ footer {
     }
 }
 
+.section-content {
+    width: 50%;
+    max-width: 400px;
+}
+
 .support-title {
-    font-family: "Kurdis-Condensed", sans-serif;
-    font-size: 66px;
-    font-weight: 700;
-    line-height: 1.1;
+    font-family: "Kurdis-CondensedSemiBold", sans-serif;
+    font-size: 52px;
+    line-height: 1.4;
     text-transform: uppercase;
     max-width: 350px;
     margin-top: 13px;
+    margin-bottom: 30px;
 }
 
 .support-copy {
@@ -750,4 +784,15 @@ footer {
     text-transform: uppercase;
     max-width: 460px;
     margin-top: 13px;
+}
+
+.support-paragraph {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.section-image {
+    width: 45%;
 }
