@@ -354,8 +354,7 @@ img {
   background-image: url(imgs/hero-white-bottom.png);
   background-size: cover;
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 45vh;
   margin-top: -10.5vw;
   position: relative;
   z-index: 10;
@@ -457,6 +456,10 @@ img {
   max-width: 970px;
 }
 
+#portfolio-companies {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 #portfolio-companies .portfolio-header {
   font-family: "Kurdis-Condensed", sans-serif;
   text-transform: uppercase;
@@ -471,6 +474,42 @@ img {
 }
 #portfolio-companies .portfolio-logos .p-logo {
   padding: 10px;
+}
+
+#plan-moves {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#plan-moves .inner-img {
+  width: 50%;
+}
+#plan-moves .inner-img .blue-box {
+  background: linear-gradient(134deg, #E3F5FF -8.52%, #C4DAE7 68.12%);
+  padding: 0 35px;
+}
+#plan-moves .inner-img .blue-box .inner-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#plan-moves .inner-img .blue-box .inner-boxes .i-box-icon {
+  width: 38%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 19.87054px -3.97411px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 10px 20px 0;
+}
+#plan-moves .inner-img .blue-box .inner-boxes .i-box-icon p {
+  font-family: "Kurdis-Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  max-width: 124px;
+}
+#plan-moves .inner-img .blue-box .inner-boxes .i-box-icon img {
+  max-width: 120px;
+  margin: 0 auto;
 }
 
 .testimonials {
@@ -686,7 +725,7 @@ footer {
   font-size: 52px;
   line-height: 1.4;
   text-transform: uppercase;
-  max-width: 350px;
+  max-width: 400px;
   margin-top: 13px;
   margin-bottom: 30px;
 }
