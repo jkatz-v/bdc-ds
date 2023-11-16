@@ -58,6 +58,29 @@ img {
     color: #C00004;
 }
 
+.red-bg {
+    background: #C00004;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Kurdis-CondensedSemiBold", sans-serif;
+    text-transform: uppercase;
+    padding: 18px;
+    border: none;
+    font-size: 18px;
+    line-height: .9;
+    margin-top: 40px;
+    letter-spacing: 1.2px;
+    img {
+        max-width: 13px;
+        margin-top: -1px;
+        margin-left: 10px;
+    }
+}
+
 .dark-blue-bg {
     background-color: #343949;
 }
@@ -143,8 +166,13 @@ img {
 
 
 .top-header-inner-inner {
-    display:flex;
-    align-items: center;
+    display: none;
+
+    @media only screen and (max-width: 1024px) {
+        display:flex;
+        align-items: center;
+    }
+   
 
     button {
         @media only screen and (max-width: 440px) {
@@ -174,10 +202,6 @@ img {
             padding: 5px 15px;
         &:hover {
             color: #ffffff;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            border-top-left-radius: 20px;
             background-color: #343949;
             cursor: pointer;
             
@@ -435,24 +459,6 @@ img {
                 }
             }
 
-            button {
-                display: flex;
-                align-items: center;
-                color: #ffffff;
-                font-family: "Kurdis-CondensedSemiBold", sans-serif;
-                text-transform: uppercase;
-                padding: 18px;
-                border: none;
-                font-size: 18px;
-                line-height: .9;
-                margin-top: 40px;
-                letter-spacing: 1.2px;
-                img {
-                    max-width: 13px;
-                    margin-top: -1px;
-                    margin-left: 10px;
-                }
-            }
         }
 
         .line-col {
@@ -529,8 +535,21 @@ img {
 }
 
 #plan-moves {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .pm-bg {
+        position: absolute;
+        max-width: 1420px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        top: -80px;
+    }
 
     .inner-img {
        width: 50%;
@@ -538,6 +557,7 @@ img {
         .blue-box {
             background: linear-gradient(134deg, #E3F5FF -8.52%, #C4DAE7 68.12%);
             padding: 0 35px;
+            max-height: 420px;
 
             .inner-boxes {
                 display: flex;
@@ -550,20 +570,46 @@ img {
                     box-shadow: 0px 0px 19.87054px -3.97411px rgba(0, 0, 0, 0.12);
                     display: flex;
                     flex-direction: column;
-                    margin: 20px 0;
+                    margin: 0 0 30px;
                     padding: 10px 20px 0;
+                    position: relative;
+                    max-height: 225px;
+
+                    &:nth-of-type(1) {
+                        margin-top: -60px;
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-top: -20px;
+                    }
+
+                    &:nth-of-type(3) {
+                        margin-top: -30px;
+                    }
+
+                    &:nth-of-type(4) {
+                        margin-top: 0px;
+                    }
 
                     p {
                         font-family: "Kurdis-Condensed", sans-serif;
                         text-transform: uppercase;
                         font-size: 21px;
                         max-width: 124px;
+                        line-height: 1.3;
                     }
                    
 
-                    img {
+                    .box-icon {
                         max-width: 120px;
                         margin: 0 auto;
+                    }
+
+                    .red-line-box {
+                      position: absolute;
+                      right: -41%;
+                      bottom: 0;
+                      max-height:40px;
                     }
                 }
             }
@@ -742,13 +788,68 @@ footer {
 .footer-top {
    background-image: url(imgs/footer-image.png);
    background-size: cover;
-   height: 100vh;
+   height: 90vh;
+
+   .f-two-cols {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9vw;
+    padding-bottom: 3vw;
+
+        .f-col-content {
+            width: 50%;
+
+            .f-support-title {
+                font-family: "Kurdis-CondensedSemiBold", sans-serif;
+                font-size: 72px;
+                line-height: 1.1;
+                text-transform: uppercase;
+                max-width: 400px;
+                margin-top: 13px;
+                margin-bottom: 30px;
+            }
+
+                .f-support-paragraph {
+                    font-family: 'Kurdis-CondensedSemiBold', sans-serif;
+                    font-size: 20px;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                    max-width: 260px;
+                }
+        }
+
+        .f-col-quote {
+            width: 25%;
+            position: relative;
+
+            .quote-icon {
+                max-width: 98px;
+            }
+            .f-quote {
+                margin-top: -12px;
+                font-family: 'Kurdis-CondensedSemiBold', sans-serif;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            .pbd-signature {
+                max-width: 116px;
+                position: absolute;
+                right: 0;
+            }
+        }
+   }
+
+   p {
+    margin: 0;
+   }
 }
 
 .diagonal-footer {
-    margin-top: -24vw;
-    background-image: url(imgs/blue-footer.svg);
-    background-size: cover;
+    margin-top: -29vw;
+    background-image: url(imgs/white-footer.svg);  
+    background-size: contain;  
+    background-position-y: bottom; 
+    background-repeat: no-repeat; 
     display:flex;
     
     
@@ -758,21 +859,23 @@ footer {
 
     .footer-links {
         display: flex;
+        flex-wrap: wrap;
         font-family: "Kurdis-Condensed", sans-serif;
         font-size: 16px;
         letter-spacing: 0.8px;
         text-transform: uppercase;
-        max-width: 730px;
+        max-width: 700px;
+        padding-top: 15px;
 
         p {
-            margin-right: 5px;
+            margin-right: 13px;
         }
 
     }
 
     .chess-pieces {
         img {
-            max-width: 420px;
+            max-width: 320px;
         }
     }
 }
