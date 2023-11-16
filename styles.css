@@ -695,12 +695,14 @@ section.social .social-icons-row img {
 /** Footer **/
 footer {
   margin-top: -5vw;
+  position: relative;
 }
 
 .footer-top {
   background-image: url(imgs/footer-image.png);
   background-size: cover;
   height: 90vh;
+  margin-bottom: -250px;
 }
 .footer-top .f-two-cols {
   display: flex;
@@ -750,12 +752,16 @@ footer {
 }
 
 .diagonal-footer {
-  margin-top: -29vw;
   background-image: url(imgs/white-footer.svg);
-  background-size: contain;
+  background-size: cover;
   background-position-y: bottom;
   background-repeat: no-repeat;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   display: flex;
+  padding-top: 250px;
+  z-index: 2;
+  width: 100%;
+  position: relative;
 }
 .diagonal-footer .footer-inner {
   display: flex;
@@ -776,6 +782,13 @@ footer {
 }
 .diagonal-footer .footer-inner .chess-pieces img {
   max-width: 320px;
+}
+
+.chess-pieces {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
 }
 
 .solutions-step {
