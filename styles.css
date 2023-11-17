@@ -9,32 +9,38 @@ img {
 
 @font-face {
   font-family: "Kurdis-Condensed";
-  src: url("fonts/Kurdis-Condensed.woff2") format("woff2"), url("fonts/Kurdis-Condensed.woff") format("woff");
+  src: url("fonts/Kurdis-Condensed.woff2") format("woff2"),
+    url("fonts/Kurdis-Condensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-CondensedSemiBold";
-  src: url("fonts/Kurdis-CondensedSemiBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedSemiBold.woff") format("woff");
+  src: url("fonts/Kurdis-CondensedSemiBold.woff2") format("woff2"),
+    url("fonts/Kurdis-CondensedSemiBold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-SemiCondensed";
-  src: url("fonts/Kurdis-SemiCondensed.woff2") format("woff2"), url("fonts/Kurdis-SemiCondensed.woff") format("woff");
+  src: url("fonts/Kurdis-SemiCondensed.woff2") format("woff2"),
+    url("fonts/Kurdis-SemiCondensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-ExtraCondensed";
-  src: url("fonts/Kurdis-ExtraCondensed.woff2") format("woff2"), url("fonts/Kurdis-ExtraCondensed.woff") format("woff");
+  src: url("fonts/Kurdis-ExtraCondensed.woff2") format("woff2"),
+    url("fonts/Kurdis-ExtraCondensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-CondensedBold";
-  src: url("fonts/Kurdis-CondensedBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedBold.woff") format("woff");
+  src: url("fonts/Kurdis-CondensedBold.woff2") format("woff2"),
+    url("fonts/Kurdis-CondensedBold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-CondensedExtraBold";
-  src: url("fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedExtraBold.woff") format("woff");
+  src: url("fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"),
+    url("fonts/Kurdis-CondensedExtraBold.woff") format("woff");
   font-display: swap;
 }
 .container {
@@ -43,11 +49,11 @@ img {
 }
 
 .red {
-  color: #C00004;
+  color: #c00004;
 }
 
 .red-bg {
-  background: #C00004;
+  background: #c00004;
 }
 
 button {
@@ -135,16 +141,16 @@ button img {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  background-color: #FF0000;
-  color: #FFFFFF;
+  background-color: #ff0000;
+  color: #ffffff;
   border-radius: 10px;
   padding: 10px 20px;
   border: none;
   max-height: 50px;
 }
 .top-header-inner button:hover {
-  color: #FF0000;
-  background-color: #FFFFFF;
+  color: #ff0000;
+  background-color: #ffffff;
   cursor: pointer;
 }
 @media only screen and (max-width: 610px) {
@@ -364,7 +370,7 @@ button img {
   width: 57%;
   font-family: "Kurdis-Condensed", sans-serif;
   text-transform: uppercase;
-  background-color: #C00004;
+  background-color: #c00004;
   color: #ffffff;
   font-size: 24px;
   padding: 15px;
@@ -502,7 +508,7 @@ button img {
   width: 50%;
 }
 #plan-moves .inner-img .blue-box {
-  background: linear-gradient(134deg, #E3F5FF -8.52%, #C4DAE7 68.12%);
+  background: linear-gradient(134deg, #e3f5ff -8.52%, #c4dae7 68.12%);
   padding: 0 35px;
   max-height: 420px;
 }
@@ -567,7 +573,7 @@ button img {
   background-position: center;
   position: relative;
   padding-top: 80px;
-  border-bottom: 4px solid #C00004;
+  border-bottom: 4px solid #c00004;
 }
 .testimonials .testimonials-inner .t-quote {
   position: absolute;
@@ -586,7 +592,7 @@ button img {
   justify-content: space-around;
 }
 .testimonials .testimonials-inner .testimonial-slider .t-author {
-  background: linear-gradient(134deg, #E3F5FF -8.52%, #C4DAE7 68.12%);
+  background: linear-gradient(134deg, #e3f5ff -8.52%, #c4dae7 68.12%);
   flex: 1;
   height: 130px;
   display: flex;
@@ -632,7 +638,7 @@ button img {
 }
 
 .form-row {
-  background: linear-gradient(181deg, #343949 0.78%, #16181F 100%);
+  background: linear-gradient(181deg, #343949 0.78%, #16181f 100%);
   padding: 30px 10px;
 }
 .form-row .form-row-inner {
@@ -644,7 +650,7 @@ button img {
   width: 50%;
 }
 .form-row .form-row-form form {
-  border: 1px solid #70788E;
+  border: 1px solid #70788e;
   background: rgba(25, 27, 34, 0.33);
   padding: 48px;
   max-width: 580px;
@@ -656,9 +662,9 @@ button img {
 .form-row .form-row-form form textarea {
   width: 100%;
 }
-.form-row .form-row-form form input[type=submit] {
+.form-row .form-row-form form input[type="submit"] {
   font-family: "Kurdis-Condensed", sans-serif;
-  background: var(--Primary, #C00004);
+  background: var(--Primary, #c00004);
   color: #ffffff;
   padding: 20px 20px;
   border: none;
@@ -702,7 +708,7 @@ footer {
   background-image: url(imgs/footer-image.png);
   background-size: cover;
   height: 90vh;
-  margin-bottom: -250px;
+  margin-bottom: -150px;
 }
 .footer-top .f-two-cols {
   display: flex;
@@ -752,15 +758,16 @@ footer {
 }
 
 .diagonal-footer {
-  background-image: url(imgs/white-footer.svg);
+  background-color: white;
   background-size: cover;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
   display: flex;
-  padding-top: 250px;
+  padding-top: 100px;
   z-index: 2;
   width: 100%;
+  height: 150px;
   position: relative;
 }
 .diagonal-footer .footer-inner {
@@ -808,7 +815,7 @@ footer {
 .red-line-header {
   font-family: "Kurdis-Condensed", sans-serif;
   font-size: 15px;
-  color: #C00004;
+  color: #c00004;
   text-transform: uppercase;
   letter-spacing: 8px;
   display: flex;
@@ -852,4 +859,4 @@ footer {
 
 .section-image {
   width: 45%;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
