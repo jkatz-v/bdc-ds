@@ -72,6 +72,7 @@ $red: #c00004;
 button {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #ffffff;
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   text-transform: uppercase;
@@ -81,6 +82,14 @@ button {
   line-height: 0.9;
   margin-top: 40px;
   letter-spacing: 1.2px;
+  @media only screen and (max-width: 768px) {
+    font-size: 17px;
+    padding: 16px;
+  }
+  @media only screen and (max-width: 640px) {
+    margin: 0 auto;
+  }
+
   img {
     max-width: 13px;
     margin-top: -1px;
@@ -872,21 +881,48 @@ section.social {
 
 footer {
   margin-top: -5vw;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-top {
-  background-image: url(imgs/footer-image.png);
+  background-image: url(imgs/blue-footer.png);
   background-size: cover;
   height: 90vh;
+  background-position-x: 50%;
+  padding: 0 20px;
+
+  @media only screen and (max-width: 1024px) {
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: 640px) {
+    background-image: url(imgs/mobile-footer.png);
+    background-position-y: 100%;
+    height: 80vh;
+  }
 
   .f-two-cols {
     display: flex;
     justify-content: space-between;
     padding-top: 9vw;
     padding-bottom: 3vw;
+    @media only screen and (max-width: 768px) {
+      padding-top: 15vw;
+    }
+
+    @media only screen and (max-width: 640px) {
+      padding-top: 0vw;
+      flex-direction: column;
+      position: relative;
+    }
 
     .f-col-content {
       width: 50%;
+      @media only screen and (max-width: 640px) {
+        width: 100%;
+        text-align: center;
+      }
 
       .f-support-title {
         font-family: "Kurdis-CondensedBold", sans-serif;
@@ -896,6 +932,13 @@ footer {
         max-width: 400px;
         margin-top: 13px;
         margin-bottom: 30px;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 62px;
+        }
+        @media only screen and (max-width: 640px) {
+          margin: 13px auto;
+        }
       }
 
       .f-support-paragraph {
@@ -904,15 +947,30 @@ footer {
         line-height: 1.4;
         text-transform: uppercase;
         max-width: 260px;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 18px;
+          max-width: 230px;
+        }
+
+        @media only screen and (max-width: 640px) {
+          display: none;
+        }
       }
     }
 
     .f-col-quote {
       width: 25%;
       position: relative;
+      @media only screen and (max-width: 640px) {
+        width: 100%;
+      }
 
       .quote-icon {
         max-width: 98px;
+        @media only screen and (max-width: 640px) {
+          display: none;
+        }
       }
       .f-quote {
         margin-top: -12px;
@@ -920,11 +978,23 @@ footer {
         font-size: 18px;
         text-transform: uppercase;
         color: $dark-blue;
+        @media only screen and (max-width: 768px) {
+          font-size: 17px;
+        }
+        @media only screen and (max-width: 640px) {
+          position: absolute;
+          right: 0;
+          max-width: 200px;
+          text-align: center;
+        }
       }
       .pbd-signature {
         max-width: 116px;
         position: absolute;
         right: 0;
+        @media only screen and (max-width: 640px) {
+          display: none;
+        }
       }
     }
   }
@@ -935,16 +1005,23 @@ footer {
 }
 
 .diagonal-footer {
-  margin-top: -26vw;
-  background-image: url(imgs/white-footer.svg);
-  background-size: contain;
-  background-position-y: bottom;
+  margin-top: -38vh;
+  background-image: url(imgs/white-footer-short.png); 
+  background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
+  padding:0 20px;
+
+  @media only screen and (max-width:1024px) {
+    margin-top: -36vh;
+  }
 
   .footer-inner {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
+
+    @media only screen and (max-width: 640px) {
+      flex-direction: column-reverse;
+    }
 
     .footer-links {
       display: flex;
@@ -955,15 +1032,31 @@ footer {
       text-transform: uppercase;
       max-width: 700px;
       padding-top: 15px;
+      padding-bottom: 10px;
+
+      @media only screen and (max-width: 460px) {
+        max-width: 130px;
+        margin: 0 auto;
+      }
 
       p {
         margin-right: 13px;
+
+        @media only screen and (max-width: 640px) {
+          width: 100%;
+          margin: 10px auto;
+          text-align: center;
+        }
       }
     }
 
     .chess-pieces {
       img {
         max-width: 320px;
+
+        @media only screen and (max-width: 640px) {
+          max-width: 240px;
+        }
       }
     }
   }
@@ -990,6 +1083,13 @@ footer {
   text-transform: uppercase;
   letter-spacing: 7px;
   display: flex;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 640px) {
+    text-align: center;
+    justify-content: center;
+  }
 
   img {
     max-width: 35px;

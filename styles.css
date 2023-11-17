@@ -58,6 +58,7 @@ section {
 button {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #ffffff;
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   text-transform: uppercase;
@@ -67,6 +68,17 @@ button {
   line-height: 0.9;
   margin-top: 40px;
   letter-spacing: 1.2px;
+}
+@media only screen and (max-width: 768px) {
+  button {
+    font-size: 17px;
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  button {
+    margin: 0 auto;
+  }
 }
 button img {
   max-width: 13px;
@@ -772,12 +784,28 @@ section.social .social-icons-row img {
 /** Footer **/
 footer {
   margin-top: -5vw;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-top {
-  background-image: url(imgs/footer-image.png);
+  background-image: url(imgs/blue-footer.png);
   background-size: cover;
   height: 90vh;
+  background-position-x: 50%;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .footer-top {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .footer-top {
+    background-image: url(imgs/mobile-footer.png);
+    background-position-y: 100%;
+    height: 80vh;
+  }
 }
 .footer-top .f-two-cols {
   display: flex;
@@ -785,8 +813,26 @@ footer {
   padding-top: 9vw;
   padding-bottom: 3vw;
 }
+@media only screen and (max-width: 768px) {
+  .footer-top .f-two-cols {
+    padding-top: 15vw;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols {
+    padding-top: 0vw;
+    flex-direction: column;
+    position: relative;
+  }
+}
 .footer-top .f-two-cols .f-col-content {
   width: 50%;
+}
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols .f-col-content {
+    width: 100%;
+    text-align: center;
+  }
 }
 .footer-top .f-two-cols .f-col-content .f-support-title {
   font-family: "Kurdis-CondensedBold", sans-serif;
@@ -797,6 +843,16 @@ footer {
   margin-top: 13px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .footer-top .f-two-cols .f-col-content .f-support-title {
+    font-size: 62px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols .f-col-content .f-support-title {
+    margin: 13px auto;
+  }
+}
 .footer-top .f-two-cols .f-col-content .f-support-paragraph {
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   font-size: 20px;
@@ -804,12 +860,33 @@ footer {
   text-transform: uppercase;
   max-width: 260px;
 }
+@media only screen and (max-width: 768px) {
+  .footer-top .f-two-cols .f-col-content .f-support-paragraph {
+    font-size: 18px;
+    max-width: 230px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols .f-col-content .f-support-paragraph {
+    display: none;
+  }
+}
 .footer-top .f-two-cols .f-col-quote {
   width: 25%;
   position: relative;
 }
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols .f-col-quote {
+    width: 100%;
+  }
+}
 .footer-top .f-two-cols .f-col-quote .quote-icon {
   max-width: 98px;
+}
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols .f-col-quote .quote-icon {
+    display: none;
+  }
 }
 .footer-top .f-two-cols .f-col-quote .f-quote {
   margin-top: -12px;
@@ -818,26 +895,53 @@ footer {
   text-transform: uppercase;
   color: #343949;
 }
+@media only screen and (max-width: 768px) {
+  .footer-top .f-two-cols .f-col-quote .f-quote {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols .f-col-quote .f-quote {
+    position: absolute;
+    right: 0;
+    max-width: 200px;
+    text-align: center;
+  }
+}
 .footer-top .f-two-cols .f-col-quote .pbd-signature {
   max-width: 116px;
   position: absolute;
   right: 0;
+}
+@media only screen and (max-width: 640px) {
+  .footer-top .f-two-cols .f-col-quote .pbd-signature {
+    display: none;
+  }
 }
 .footer-top p {
   margin: 0;
 }
 
 .diagonal-footer {
-  margin-top: -26vw;
-  background-image: url(imgs/white-footer.svg);
-  background-size: contain;
-  background-position-y: bottom;
+  margin-top: -38vh;
+  background-image: url(imgs/white-footer-short.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .diagonal-footer {
+    margin-top: -36vh;
+  }
 }
 .diagonal-footer .footer-inner {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 640px) {
+  .diagonal-footer .footer-inner {
+    flex-direction: column-reverse;
+  }
 }
 .diagonal-footer .footer-inner .footer-links {
   display: flex;
@@ -848,12 +952,31 @@ footer {
   text-transform: uppercase;
   max-width: 700px;
   padding-top: 15px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 460px) {
+  .diagonal-footer .footer-inner .footer-links {
+    max-width: 130px;
+    margin: 0 auto;
+  }
 }
 .diagonal-footer .footer-inner .footer-links p {
   margin-right: 13px;
 }
+@media only screen and (max-width: 640px) {
+  .diagonal-footer .footer-inner .footer-links p {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
 .diagonal-footer .footer-inner .chess-pieces img {
   max-width: 320px;
+}
+@media only screen and (max-width: 640px) {
+  .diagonal-footer .footer-inner .chess-pieces img {
+    max-width: 240px;
+  }
 }
 
 .solutions-step {
@@ -877,6 +1000,17 @@ footer {
   text-transform: uppercase;
   letter-spacing: 7px;
   display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .red-line-header {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .red-line-header {
+    text-align: center;
+    justify-content: center;
+  }
 }
 .red-line-header img {
   max-width: 35px;
