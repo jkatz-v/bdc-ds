@@ -99,7 +99,7 @@ button img {
 }
 
 .top-header {
-  background-color: #000000;
+  background-color: #fff;
 }
 @media only screen and (max-width: 1024px) {
   .top-header {
@@ -192,20 +192,36 @@ button img {
   display: flex;
   margin-top: 10px;
 }
-.top-menu p {
-  margin: 0 12px;
+.top-menu li {
+  list-style: none;
+  margin: 5px 10px;
   font-size: 18px;
-  font-family: "Kurdis-Condensed", sans-serif;
+  font-family: "Kurdis-CondensedBold", sans-serif;
   text-transform: uppercase;
+}
+.top-menu .has-submenu {
+  position: relative;
+}
+.top-menu .submenu {
+  position: absolute;
+  top: 30px;
+  background-color: #fff;
+  z-index: 1;
+  padding: 10px 0px;
+  width: 210%;
+  display: none;
+}
+.top-menu .submenu.visible {
+  display: block;
 }
 .top-menu a {
   color: #343949;
   text-decoration: none;
   padding: 5px 15px;
 }
-.top-menu a:hover {
+.top-menu a:hover, .top-menu a:focus {
   color: #ffffff;
-  background-color: #343949;
+  background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
   cursor: pointer;
 }
 @media only screen and (max-width: 1024px) {
@@ -221,7 +237,7 @@ button img {
   margin: 0 0 0 30px;
   overflow: visible;
   position: relative;
-  z-index: 2;
+  z-index: 101;
 }
 
 #burger-menu span,
@@ -279,7 +295,7 @@ button img {
 }
 
 #menu {
-  z-index: 1;
+  z-index: 100;
   min-width: 100%;
   min-height: 100%;
   position: fixed;
@@ -298,12 +314,24 @@ button img {
 }
 #menu li {
   list-style: none;
+  font-family: "Kurdis-CondensedBold", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 5px 15px;
+  display: block;
+}
+#menu li:active {
+  display: inline-block;
+  color: #ffffff;
+  background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
+  cursor: pointer;
 }
 #menu a {
-  color: #fff;
+  color: #343949;
   display: block;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -311,7 +339,9 @@ button img {
   visibility: visible;
   opacity: 1;
   padding-top: 100px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
 }
 
 @media only screen and (min-width: 1025px) {
@@ -461,6 +491,12 @@ button img {
 #hero-cta .container {
   display: flex;
   align-items: flex-end;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 640px) {
+  #hero-cta .container {
+    padding: 0;
+  }
 }
 #hero-cta .container .r-hero-cta {
   display: flex;
@@ -615,8 +651,18 @@ button img {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  #what-do .content-row {
+    flex-direction: column;
+  }
+}
 #what-do .content-row .content-col {
   width: 43%;
+}
+@media only screen and (max-width: 768px) {
+  #what-do .content-row .content-col {
+    width: 100%;
+  }
 }
 #what-do .content-row .content-col .what-header {
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
@@ -624,14 +670,29 @@ button img {
   text-transform: uppercase;
   font-size: 52px;
 }
+@media only screen and (max-width: 1024px) {
+  #what-do .content-row .content-col .what-header {
+    font-size: 42px;
+  }
+}
 #what-do .content-row .content-col .what-header p {
   margin: 0;
 }
 #what-do .content-row .line-col {
   width: 35%;
 }
+@media only screen and (max-width: 768px) {
+  #what-do .content-row .line-col {
+    display: none;
+  }
+}
 #what-do .content-row .line-col img {
   max-width: 280px;
+}
+@media only screen and (max-width: 1024px) {
+  #what-do .content-row .line-col img {
+    max-width: 170px;
+  }
 }
 #what-do .content-row .numbers-col .number-row {
   display: flex;
@@ -642,10 +703,20 @@ button img {
   font-size: 90px;
   margin-right: 20px;
 }
+@media only screen and (max-width: 1024px) {
+  #what-do .content-row .numbers-col .number-row .number-number {
+    font-size: 72px;
+  }
+}
 #what-do .content-row .numbers-col .number-row .number-row-content {
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   text-transform: uppercase;
   font-size: 23px;
+}
+@media only screen and (max-width: 1024px) {
+  #what-do .content-row .numbers-col .number-row .number-row-content {
+    font-size: 21px;
+  }
 }
 #what-do .content-row .numbers-col .number-row .number-row-content-bold {
   font-family: "Kurdis-CondensedExtraBold", sans-serif;
@@ -653,18 +724,34 @@ button img {
   font-size: 23px;
 }
 #what-do .content-row .numbers-col .number-row.n-second {
-  margin-left: -120px;
+  margin-left: -7vw;
 }
 #what-do .content-row .numbers-col .number-row.n-third {
-  margin-left: -270px;
+  margin-left: -14vw;
 }
 #what-do .content-row .float-line {
   position: absolute;
   top: -8%;
-  right: 2%;
+  right: 6%;
+}
+@media only screen and (max-width: 1024px) {
+  #what-do .content-row .float-line {
+    top: -13%;
+    right: 2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #what-do .content-row .float-line {
+    display: none;
+  }
 }
 #what-do .content-row .float-line img {
   max-width: 970px;
+}
+@media only screen and (max-width: 1024px) {
+  #what-do .content-row .float-line img {
+    max-width: 840px;
+  }
 }
 
 #portfolio-companies {
@@ -759,9 +846,11 @@ button img {
 
 .testimonials {
   margin-top: 70px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 .testimonials .testimonials-header {
-  font-family: "Kurdis-Bold", sans-serif;
+  font-family: "Kurdis-CondensedBold", sans-serif;
   text-transform: uppercase;
   font-size: 40px;
   text-align: center;
@@ -771,7 +860,7 @@ button img {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding-top: 80px;
+  padding-top: 100px;
   border-bottom: 4px solid #c00004;
 }
 .testimonials .testimonials-inner .t-quote {
@@ -839,6 +928,12 @@ button img {
 .case-studies .cs-inner {
   display: flex;
   position: relative;
+  overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .case-studies .cs-inner {
+    flex-wrap: wrap;
+  }
 }
 .case-studies .cs-inner .horizontal-line {
   position: absolute;
@@ -847,7 +942,17 @@ button img {
   bottom: 50%;
   left: 0;
   margin: 0 auto;
-  max-width: 1110px;
+  max-width: 1100px;
+}
+@media only screen and (max-width: 1024px) {
+  .case-studies .cs-inner .horizontal-line {
+    max-width: 1000px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .case-studies .cs-inner .horizontal-line {
+    display: none;
+  }
 }
 .case-studies .cs-inner .vertical-line {
   position: absolute;
@@ -858,8 +963,18 @@ button img {
   margin: 0 auto;
   max-height: 680px;
 }
+@media only screen and (max-width: 768px) {
+  .case-studies .cs-inner .vertical-line {
+    display: none;
+  }
+}
 .case-studies .cs-inner .cs-cols {
   width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .case-studies .cs-inner .cs-cols {
+    width: 100%;
+  }
 }
 .case-studies .cs-inner .cs-cols .cs-main-header {
   padding: 30px;
@@ -872,6 +987,25 @@ button img {
   align-items: center;
   min-height: 230px;
 }
+@media only screen and (max-width: 768px) {
+  .case-studies .cs-inner .cs-cols .cs-content-icon {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .case-studies .cs-inner .cs-cols .cs-content-icon {
+    flex-wrap: wrap;
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .case-studies .cs-inner .cs-cols .cs-content-icon .cs-content-inner {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
 .case-studies .cs-inner .cs-cols .cs-content-icon .cs-content-inner .cs-title {
   font-family: "Kurdis-CondensedBold", sans-serif;
   font-size: 32px;
@@ -879,6 +1013,18 @@ button img {
   text-transform: uppercase;
   max-width: 300px;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .case-studies .cs-inner .cs-cols .cs-content-icon .cs-content-inner .cs-title {
+    font-size: 28px;
+    max-width: 260px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .case-studies .cs-inner .cs-cols .cs-content-icon .cs-content-inner .cs-title {
+    max-width: 300px;
+    margin: 15px auto;
+  }
 }
 .case-studies .cs-inner .cs-cols .cs-content-icon .cs-content-inner .cs-button {
   display: inline-block;
@@ -897,18 +1043,43 @@ button img {
 .case-studies .cs-inner .cs-cols .cs-content-icon .cs-icon-inner img {
   max-width: 280px;
 }
+@media only screen and (max-width: 1024px) {
+  .case-studies .cs-inner .cs-cols .cs-content-icon .cs-icon-inner img {
+    max-width: 240px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .case-studies .cs-inner .cs-cols .cs-content-icon .cs-icon-inner img {
+    max-width: 330px;
+  }
+}
 
 .form-row {
   background: linear-gradient(181deg, #343949 0.78%, #16181f 100%);
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 .form-row .form-row-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .form-row .form-row-inner {
+    flex-wrap: wrap;
+  }
+}
 .form-row .form-row-inner .form-row-content {
   width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .form-row .form-row-inner .form-row-content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .form-row .form-row-form {
+    width: 100%;
+  }
 }
 .form-row .form-row-form .form {
   border: 1px solid #70788e;
@@ -1215,10 +1386,6 @@ footer {
 @media only screen and (max-width: 768px) {
   .red-line-header {
     font-size: 14px;
-  }
-}
-@media only screen and (max-width: 640px) {
-  .red-line-header {
     text-align: center;
     justify-content: center;
   }
@@ -1226,6 +1393,11 @@ footer {
 .red-line-header img {
   max-width: 35px;
   margin-right: 13px;
+}
+@media only screen and (max-width: 767px) {
+  .red-line-header img {
+    display: none;
+  }
 }
 
 .section-content {
@@ -1242,6 +1414,22 @@ footer {
   margin-top: 13px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  .support-title {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .support-title {
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .support-title {
+    font-size: 38px;
+  }
+}
 
 .support-copy {
   font-family: "Inter", sans-serif;
@@ -1251,6 +1439,12 @@ footer {
   line-height: 1.1;
   max-width: 420px;
   margin-top: 13px;
+}
+@media only screen and (max-width: 768px) {
+  .support-copy {
+    text-align: center;
+    margin: 20px auto 30px;
+  }
 }
 
 .support-paragraph {

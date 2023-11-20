@@ -112,7 +112,7 @@ $dark-blue: #343949;
 }
 
 .top-header {
-  background-color: #000000;
+  background-color: #fff;
   @media only screen and (max-width: 1024px) {
     padding-right: 30px;
     padding-left: 30px;
@@ -199,11 +199,29 @@ $dark-blue: #343949;
   display: flex;
   margin-top: 10px;
 
-  p {
-    margin: 0 12px;
+  li {
+    list-style: none;
+    margin: 5px 10px;
     font-size: 18px;
-    font-family: "Kurdis-Condensed", sans-serif;
+    font-family: "Kurdis-CondensedBold", sans-serif;
     text-transform: uppercase;
+  }
+  .has-submenu {
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 30px;
+    background-color: #fff;
+    z-index:1;
+    padding:10px 0px;
+    width: 210%;
+    display: none;
+  }
+
+  .submenu.visible {
+    display:block;
   }
 
   a {
@@ -211,9 +229,9 @@ $dark-blue: #343949;
     text-decoration: none;
 
     padding: 5px 15px;
-    &:hover {
+    &:hover, &:focus {
       color: #ffffff;
-      background-color: #343949;
+      background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
       cursor: pointer;
     }
   }
@@ -230,7 +248,7 @@ $dark-blue: #343949;
   margin: 0 0 0 30px;
   overflow: visible;
   position: relative;
-  z-index: 2;
+  z-index: 101;
 }
 #burger-menu span,
 #burger-menu span:before,
@@ -281,7 +299,7 @@ $dark-blue: #343949;
 }
 
 #menu {
-  z-index: 1;
+  z-index: 100;
   min-width: 100%;
   min-height: 100%;
   position: fixed;
@@ -301,13 +319,25 @@ $dark-blue: #343949;
 
   li {
     list-style: none;
+    font-family: "Kurdis-CondensedBold", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 15px;
+    display: block;
+    &:active {
+      display: inline-block;
+      color: #ffffff;
+      background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
+      cursor: pointer;
+    }
   }
 
   a {
-    color: #fff;
+    color: #343949;
     display: block;
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-decoration: none;
   }
 }
@@ -316,7 +346,8 @@ $dark-blue: #343949;
   visibility: visible;
   opacity: 1;
   padding-top: 100px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(6px);
 }
 
 @media only screen and (min-width: 1025px) {
@@ -449,6 +480,10 @@ $dark-blue: #343949;
   .container {
     display: flex;
     align-items: flex-end;
+    padding: 0 10px;
+    @media only screen and (max-width: 640px) {
+      padding: 0;
+    }
 
     .r-hero-cta {
       display: flex;
@@ -578,15 +613,24 @@ $dark-blue: #343949;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .content-col {
       width: 43%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
 
       .what-header {
         font-family: "Kurdis-CondensedSemiBold", sans-serif;
         line-height: 1;
         text-transform: uppercase;
         font-size: 52px;
+        @media only screen and (max-width: 1024px) {
+          font-size: 42px;
+        }
 
         p {
           margin: 0;
@@ -596,8 +640,14 @@ $dark-blue: #343949;
 
     .line-col {
       width: 35%;
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
       img {
         max-width: 280px;
+        @media only screen and (max-width: 1024px) {
+          max-width: 170px;
+        }
       }
     }
 
@@ -610,12 +660,18 @@ $dark-blue: #343949;
           font-family: "Kurdis-Condensed", sans-serif;
           font-size: 90px;
           margin-right: 20px;
+          @media only screen and (max-width: 1024px) {
+            font-size: 72px;
+          }
         }
 
         .number-row-content {
           font-family: "Kurdis-CondensedSemiBold", sans-serif;
           text-transform: uppercase;
           font-size: 23px;
+          @media only screen and (max-width: 1024px) {
+            font-size: 21px;
+          }
         }
 
         .number-row-content-bold {
@@ -625,10 +681,10 @@ $dark-blue: #343949;
         }
 
         &.n-second {
-          margin-left: -120px;
+          margin-left: -7vw;
         }
         &.n-third {
-          margin-left: -270px;
+          margin-left: -14vw;
         }
       }
     }
@@ -636,9 +692,19 @@ $dark-blue: #343949;
     .float-line {
       position: absolute;
       top: -8%;
-      right: 2%;
+      right: 6%;
+      @media only screen and (max-width: 1024px) {
+        top: -13%;
+        right: 2%;
+      }
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
       img {
         max-width: 970px;
+        @media only screen and (max-width: 1024px) {
+          max-width: 840px;
+        }
       }
     }
   }
@@ -751,9 +817,11 @@ $dark-blue: #343949;
 
 .testimonials {
   margin-top: 70px;
+  margin-right: -20px;
+  margin-left: -20px;
 
   .testimonials-header {
-    font-family: "Kurdis-Bold", sans-serif;
+    font-family: "Kurdis-CondensedBold", sans-serif;
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
@@ -764,7 +832,7 @@ $dark-blue: #343949;
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 100px;
     border-bottom: 4px solid #c00004;
 
     .t-quote {
@@ -842,6 +910,10 @@ $dark-blue: #343949;
     .cs-inner {
         display: flex;
         position: relative;
+        overflow: hidden;
+        @media only screen and (max-width: 768px) {
+          flex-wrap: wrap;
+        }
 
         .horizontal-line {
             position: absolute;
@@ -850,7 +922,13 @@ $dark-blue: #343949;
             bottom: 50%;
             left: 0;
             margin: 0 auto;
-            max-width: 1110px;
+            max-width: 1100px;
+            @media only screen and (max-width: 1024px) {
+              max-width: 1000px;
+            }
+            @media only screen and (max-width: 768px) {
+              display: none;
+            }
         }
 
         .vertical-line {
@@ -861,10 +939,16 @@ $dark-blue: #343949;
             left: 0;
             margin: 0 auto;
             max-height: 680px;
+            @media only screen and (max-width: 768px) {
+              display: none;
+            }
         }
 
         .cs-cols {
             width: 50%;
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
 
             .cs-main-header {
                 padding: 30px;
@@ -877,8 +961,21 @@ $dark-blue: #343949;
                 margin: 0 -10px;
                 align-items: center;
                 min-height: 230px; 
+                @media only screen and (max-width: 768px) {
+                  justify-content: center;
+                }
+                @media only screen and (max-width: 640px) {
+                  flex-wrap: wrap;
+                  margin: 0;
+                  flex-direction: column-reverse;
+                }
 
                 .cs-content-inner {
+                  @media only screen and (max-width: 640px) {
+                    width: 100%;
+                    margin: 20px auto;
+                    text-align: center;
+                  }
                     .cs-title {
                         font-family: "Kurdis-CondensedBold", sans-serif;
                         font-size: 32px;
@@ -886,6 +983,14 @@ $dark-blue: #343949;
                         text-transform: uppercase;
                         max-width: 300px;
                         margin-bottom: 30px;
+                        @media only screen and (max-width: 1024px) {
+                          font-size: 28px;
+                          max-width: 260px;
+                        }
+                        @media only screen and (max-width: 640px) {
+                          max-width: 300px;
+                          margin: 15px auto;
+                        }
                     }
 
                     .cs-button {
@@ -910,6 +1015,12 @@ $dark-blue: #343949;
                 .cs-icon-inner {
                     img {
                         max-width: 280px;
+                        @media only screen and (max-width: 1024px) {
+                          max-width: 240px;
+                        }
+                        @media only screen and (max-width: 640px) {
+                          max-width: 330px;
+                        }
                     }
                 }
             }
@@ -919,19 +1030,28 @@ $dark-blue: #343949;
 
 .form-row {
   background: linear-gradient(181deg, #343949 0.78%, #16181f 100%);
-  padding: 30px 10px;
+  padding: 30px 20px;
 
   .form-row-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
 
     .form-row-content {
       width: 50%;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 
   .form-row-form {
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
     .form {
       border: 1px solid #70788e;
       background: rgba(25, 27, 34, 0.33);
@@ -1230,8 +1350,6 @@ footer {
   display: flex;
   @media only screen and (max-width: 768px) {
     font-size: 14px;
-  }
-  @media only screen and (max-width: 640px) {
     text-align: center;
     justify-content: center;
   }
@@ -1239,6 +1357,9 @@ footer {
   img {
     max-width: 35px;
     margin-right: 13px;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -1255,6 +1376,16 @@ footer {
   max-width: 400px;
   margin-top: 13px;
   margin-bottom: 30px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 48px;
+  }
+  @media only screen and (max-width: 768px) {
+    margin: 20px auto;
+    text-align: center;
+  }
+  @media only screen and (max-width: 640px) {
+    font-size: 38px;
+  }
 }
 
 .support-copy {
@@ -1265,6 +1396,10 @@ footer {
   line-height: 1.1;
   max-width: 420px;
   margin-top: 13px;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    margin: 20px auto 30px;
+  }
 }
 
 .support-paragraph {
