@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "Kurdis";
+  src: url("fonts/Kurdis-Regular.woff");
+}
+
+@font-face {
+  font-family: "Kurdis";
+  src: url("fonts/Kurdis-Bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Kurdis";
+  src: url("fonts/Kurdis-ExtraBold.woff");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Kurdis";
+  src: url("fonts/Kurdis-Condensed.woff");
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Kurdis";
+  src: url("fonts/Kurdis-CondensedBold.woff");
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+:root {
+  --outer-circle-size: 500px;
+  --inner-circle-size: 33cqh;
+  --inner-circle-text-size: calc(var(--inner-circle-size) / 2.5);
+  --light-blue-color: rgb(202, 223, 234);
+  --light-blue-transparent-color: rgba(15, 15, 15, 0.05);
+  --dark-blue-color: rgb(34, 65, 83);
+  --red-color: rgb(192, 0, 4);
+  --off-white-color: #cadfea;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+
+#wheel-container {
+  width: var(--outer-circle-size);
+  height: var(--outer-circle-size);
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+  background: radial-gradient(
+    circle calc(var(--outer-circle-size) * 0.7),
+    rgba(192, 0, 130, 0.4) 0%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  transition: all 0.5s ease;
+  font-size: calc(var(--outer-circle-size) / 60);
+  font-family: "Kurdis";
+  container: wheel / size;
+  padding: 10%;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+#wheel-container h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#lines {
+  z-index: 50;
+}
+
+.inner-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(var(--inner-circle-size) * 1.15);
+  height: calc(var(--inner-circle-size) * 1.15);
+  border-radius: 50%;
+  border-color: var(--red-color);
+  border-width: calc(var(--inner-circle-size) / 20);
+  border-style: solid;
+  background: transparent;
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition: all 0.25s ease;
+  transform-origin: center;
+  z-index: 100;
+  translate: -50% -50%;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: var(--inner-circle-size);
+  height: var(--inner-circle-size);
+  background-color: #c00004;
+  border-radius: 50%;
+  border-color: transparent;
+  border-width: calc(var(--inner-circle-size) / 20);
+  border-style: solid;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: var(--inner-circle-text-size);
+  z-index: 100;
+}
+
+.slices {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.slice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-blue-color);
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--dark-blue-color);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+div[class*="content-0"].title-hover {
+  color: var(--red-color);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.clip-01 {
+  clip-path: polygon(50% 50%, 13% 0, 85% 0);
+}
+
+.clip-01.inner-ring {
+  clip-path: polygon(50% 50%, 13% 0, 86% 0);
+}
+
+.clip-02 {
+  clip-path: polygon(50% 50%, 86% 0, 100% 0, 100% 65%);
+}
+
+.clip-02.inner-ring {
+  clip-path: polygon(50% 50%, 14% 0, 86% 0);
+}
+
+.clip-03 {
+  clip-path: polygon(50% 50%, 100% 65.5%, 100% 100%, 50% 100%);
+}
+
+.clip-03.inner-ring {
+  clip-path: polygon(50% 50%, 13% 0, 86% 0);
+}
+
+.clip-04 {
+  clip-path: polygon(50% 50%, 0 66%, 0 100%, 49.5% 100%);
+}
+
+.clip-04.inner-ring {
+  clip-path: polygon(50% 50%, 15% 0, 86% 0);
+}
+
+.clip-05 {
+  clip-path: polygon(50% 50%, 12% 0, 0 0, 0 65.5%);
+}
+
+.clip-05.inner-ring {
+  clip-path: polygon(50% 50%, 13% 0, 86% 0);
+}
+
+#lines {
+  position: absolute;
+  pointer-events: none;
+}
+
+.slice-list {
+  display: none;
+}
+
+@keyframes BackgroundFadeOut {
+  from {
+    background-color: var(--light-blue-color);
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes BackgroundFadeIn {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: var(--light-blue-color);
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.BGFadeIn {
+  animation-name: BackgroundFadeIn;
+}
+
+.BGFadeOut {
+  animation-name: BackgroundFadeOut;
+}
+
+.FadeIn {
+  animation-name: FadeIn;
+}
+
+.FadeOut {
+  animation-name: FadeOut;
+}
+
+@keyframes MoveDown {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translateY(150%);
+  }
+}
+
+.FadeOutAndMoveDown {
+  opacity: 0;
+  transform: translateY(150%);
+}
+
+div.inner-circle > div {
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+}
+
+div.inner-circle h1 {
+  font-size: 5cqh !important;
+  margin: 0;
+  width: fit-content;
+}
+
+div.inner-circle h2 {
+  font-size: 4cqh !important;
+}
+
+.FiveFive {
+  transition: all 1s ease;
+  animation-fill-mode: forwards;
+}
+
+div.inner-circle div.FiveFive h1 {
+  font-size: calc(15cqh) !important;
+  translate: 0 2cqh;
+}
+
+div.inner-circle div:not(.FiveFive) {
+  color: var(--dark-blue-color);
+  transition: all 0.5s ease;
+}
+
+.Startup {
+  translate: 0 -35cqh;
+}
+
+.EarlyStage {
+  translate: 35cqw -12cqh;
+}
+
+.MidStage {
+  translate: 90% 140%;
+  white-space: nowrap;
+}
+
+.Mature {
+  translate: -100% 140%;
+}
+
+.AquiredMerged {
+  translate: -100% -40%;
+}
+
+div.inner-circle > div.stage-center {
+  translate: 0 0;
+  color: white;
+}
+
+div.inner-circle > div.stage-center h1 {
+  font-size: 1.8rem;
+}
+
+div.inner-circle > div.stage-center h2 {
+  font-size: 2rem;
+  color: white !important;
+}
+
+div.inner-circle > div.stage-hover {
+  scale: 1.1;
+}
+
+div.inner-circle > div.stage-hover h2 {
+  color: var(--red-color);
+}
+
+div.inner-circle.stage-selected {
+  background-color: var(--dark-blue-color);
+}
+
+div.contents {
+  position: relative;
+  top: -50cqw;
+  left: 50cqh;
+}
+
+div.contents div.slice-content {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+div.contents div.slice-content ol {
+  color: var(--dark-blue-color);
+  list-style: none;
+  counter-reset: li;
+  font-size: large;
+  translate: 0 1cqh;
+}
+
+div.contents div.slice-content li::before {
+  content: counter(li) ". ";
+  counter-increment: li;
+  color: var(--red-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+div.contents div.slice-content.selected {
+  display: block;
+  opacity: 1;
+}
+
+div.contents div.slice-content.Startup {
+  translate: -24cqw -55cqh;
+}
+
+div.contents div.slice-content.EarlyStage {
+  translate: 18cqw -30cqh;
+}
+
+div.contents div.slice-content.MidStage {
+  translate: 0cqw 17cqh;
+}
+
+div.contents div.slice-content.Mature {
+  translate: -35cqw 15cqh;
+}
+
+div.contents div.slice-content.AquiredMerged {
+  translate: -55cqw -38cqh;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --outer-circle-size: 300px;
+    --inner-circle-size: 33cqh;
+    --inner-circle-text-size: calc(var(--inner-circle-size) / 2.5);
+    --light-blue-color: rgb(202, 223, 234);
+    --light-blue-transparent-color: rgba(15, 15, 15, 0.05);
+    --dark-blue-color: rgb(34, 65, 83);
+    --red-color: rgb(192, 0, 4);
+    --off-white-color: #cadfea;
+  }
+
+  #wheel-container {
+    background: radial-gradient(
+      circle calc(var(--outer-circle-size) * 0.7),
+      rgba(192, 0, 130, 0.4) 0%,
+      rgba(255, 255, 255, 0) 65%
+    );
+  }
+
+  div.contents div.slice-content ol {
+    font-size: small;
+  }
+  div.contents div.slice-content.Startup {
+    translate: -24cqw -50cqh;
+  }
+
+  div.contents div.slice-content.EarlyStage {
+    translate: 18cqw -30cqh;
+  }
+
+  div.contents div.slice-content.MidStage {
+    translate: 0cqw 17cqh;
+  }
+
+  div.contents div.slice-content.Mature {
+    translate: -40cqw 16cqh;
+  }
+
+  div.contents div.slice-content.AquiredMerged {
+    translate: -50cqw -35cqh;
+  }
+}
