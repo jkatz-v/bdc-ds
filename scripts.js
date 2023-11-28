@@ -1,5 +1,4 @@
 /** Reusable Navigation **/
-
   class Nav extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `

@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="fivebyfive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -101,7 +102,131 @@
                     <button class="red-bg">Connect to a consultant <img src="imgs/chevron-right.svg"></button>
                 </div>
                 <div class="section-image">
-                    <img src="imgs/five-by-five.png">
+                    <div id="wheel-container">
+                        <svg id="lines" height="700" width="700" style="display: none">
+                          <line
+                            id="upperLeftLine"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="0"
+                            style="stroke: rgb(255, 255, 255); stroke-width: 2"
+                          />
+                          <line
+                            id="upperRightLine"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="0"
+                            style="stroke: rgb(255, 255, 255); stroke-width: 2"
+                          />
+                          <line
+                            id="bottomRightLine"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="0"
+                            style="stroke: rgb(255, 255, 255); stroke-width: 2"
+                          />
+                          <line
+                            id="bottomLine"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="0"
+                            style="stroke: rgb(255, 255, 255); stroke-width: 2"
+                          />
+                          <line
+                            id="bottomLeftLine"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="0"
+                            style="stroke: rgb(255, 255, 255); stroke-width: 2"
+                          />
+                        </svg>
+                        <div class="slices">
+                          <div class="slice slice-01 clip-01 BGFadeIn"></div>
+                          <div class="slice slice-02 clip-02 BGFadeIn"></div>
+                          <div class="slice slice-03 clip-03 BGFadeIn"></div>
+                          <div class="slice slice-04 clip-04 BGFadeIn"></div>
+                          <div class="slice slice-05 clip-05 BGFadeIn"></div>
+                        </div>
+                        <div class="contents">
+                          <div class="slice-content Startup">
+                            <ol>
+                              <li>Business Plan</li>
+                              <li>Funding: Bootstrap, F&F</li>
+                              <li>MVP</li>
+                              <li>First Customers</li>
+                              <li>Co-Founders / 1st Employees</li>
+                            </ol>
+                          </div>
+                          <div class="slice-content EarlyStage">
+                            <ol>
+                              <li>Marketing</li>
+                              <li>Codify Sales</li>
+                              <li>Core Team</li>
+                              <li>
+                                Funding: Seed Or<br />
+                                Series A,B
+                              </li>
+                              <li>Early Operations</li>
+                            </ol>
+                          </div>
+                          <div class="slice-content MidStage">
+                            <ol>
+                              <li>C-Level Team</li>
+                              <li>Sales Leader</li>
+                              <li>KPIs / Planning</li>
+                              <li>Product Versions, Extensions</li>
+                              <li>
+                                Scaling Operations And <br />
+                                Internal Costs
+                              </li>
+                            </ol>
+                          </div>
+                          <div class="slice-content Mature">
+                            <ol>
+                              <li>Funding: <br />Expansion Capital</li>
+                              <li>Succession Plan</li>
+                            </ol>
+                          </div>
+                          <div class="slice-content AquiredMerged">
+                            <ol>
+                              <li>Positioning<br />For Sale</li>
+                              <li>The Right Banker</li>
+                              <li>Art Of Negotiation</li>
+                              <li>Getting The<br />Maximum Multiple</li>
+                              <li>Optimizing<br />Your Earn-Out/<br />Transition</li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="inner-ring clip-01"></div>
+                        <div class="inner-circle">
+                          <div class="FiveFive"><h1>5x5</h1></div>
+                          <div class="Startup">
+                            <h2>01</h2>
+                            <h1>Startup</h1>
+                          </div>
+                          <div class="EarlyStage">
+                            <h2>02</h2>
+                            <h1>Early Stage</h1>
+                          </div>
+                          <div class="MidStage">
+                            <h2>03</h2>
+                            <h1>Mid Stage</h1>
+                          </div>
+                          <div class="Mature">
+                            <h2>04</h2>
+                            <h1>Mature</h1>
+                          </div>
+                          <div class="AquiredMerged">
+                            <h2>05</h2>
+                            <h1>Aquired / Merged</h1>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
           </div>
