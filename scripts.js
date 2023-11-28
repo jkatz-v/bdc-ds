@@ -7,17 +7,17 @@
         <div class="top-header-inner">
             <a href="/"><img src="imgs/bdc-logo.svg" width="130"></a>
             <ul class="top-menu">
-              <li><a href="#">Our Philosophy</a></li>
+              <li><a href="philosophy.html">Our Philosophy</a></li>
               <li class="has-submenu"><a href="#">Services</a>
                   <ul class="submenu hidden">
                       <li><a>Strategy Sessions</a></li>
-                      <li><a>Events</a></li>
+                      <li><a href="events.html">Events</a></li>
                       <li><a>Bet-David Academy</a></li>
                       <li><a>1:1 Consulting</a></li>
                       <li><a>Case Studies</a></li>
                   </ul>
               </li>
-              <li><a href="#">About</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="#">Careers</a></li>
             </ul>
             <div class="top-header-inner-inner">
