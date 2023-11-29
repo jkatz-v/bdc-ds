@@ -5,7 +5,7 @@
       <nav class="top-header">
       <div class="container">
         <div class="top-header-inner">
-            <a href="/"><img src="imgs/bdc-logo.svg" width="130"></a>
+            <a href="index.html"><img src="imgs/bdc-logo.svg" width="130"></a>
             <ul class="top-menu">
               <li><a href="philosophy.html">Our Philosophy</a></li>
               <li class="has-submenu"><a href="#">Services</a>

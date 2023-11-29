@@ -105,7 +105,7 @@ button {
   }
 
   img {
-    max-width: 13px;
+    max-width: 12px;
     margin-top: -1px;
     margin-left: 10px;
     @media only screen and (max-width: 640px) {
@@ -141,7 +141,7 @@ $dark-blue: #343949;
 
 $light-blue-bg: #CADFEA;
 
-.light-blue-bg {
+.light-blue-btn {
   background-color: $light-blue-bg;
   background: linear-gradient(to left, $light-blue-bg 50%, $dark-blue 50%) right;
   background-size: 200%;
@@ -153,11 +153,8 @@ $light-blue-bg: #CADFEA;
   }
 }
 
-.light-blue-bio {
+.light-blue-bg {
   background-color: $light-blue-bg;
-  background: linear-gradient(to left, $light-blue-bg 50%, $dark-blue 50%) right;
-  background-size: 200%;
-  transition: .3s ease-out;
 }
 
 .white {
@@ -442,7 +439,7 @@ $light-blue-bg: #CADFEA;
 }
 
 #home-hero {
-  background-image: url(imgs/bdc-hero.jpg);
+  background-image: url(imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 75vh;
@@ -1894,7 +1891,7 @@ footer {
 }
 
 .internal-page-hero {
-  background-image: url(imgs/bdc-hero.jpg);
+  background-image: url(imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
@@ -2192,7 +2189,7 @@ section.events {
 
 /** Expert Operators **/
 .expert-page-hero {
-  background-image: url(imgs/bdc-hero.jpg);
+  background-image: url(imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 440px;
@@ -2427,7 +2424,7 @@ section.events {
       padding: 0;
     }
 
-  .light-blue-bio {
+  .light-blue-bg {
     position: relative;
     max-width: 1000px;
     padding: 60px;
@@ -2488,6 +2485,222 @@ section.events {
       max-width: 315px;
       flex: 1;
       margin-right: 20px;
+    }
+  }
+}
+
+/** Online Academy **/
+.academy-page-hero {
+  background-image: url(imgs/bdc-hero-new.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 440px;
+  padding-top: 120px;
+  margin-top: -120px;
+  @media only screen and (max-width: 1024px) {
+    height: 430px;
+  }
+  @media only screen and (max-width: 768px) {
+    height: 420px;
+  }
+  @media only screen and (max-width: 640px) {
+    height: fit-content;
+  }
+
+  .academy-page-hero-inner {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+    position: relative;
+    @media only screen and (max-width: 640px) {
+      flex-wrap: wrap;
+    }
+
+    .academy-hero-content {
+      padding-top: 60px;
+      position: relative;
+      @media only screen and (max-width: 640px) {
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero-subheader {
+        font-family: "Kurdis-CondensedBold", sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 4px;
+        text-align: center;
+        @media only screen and (max-width: 1100px) {
+          font-size: 15px;
+        }
+        @media only screen and (max-width: 1024px) {
+          font-size: 14px;
+        }
+        @media only screen and (max-width: 460px) {
+          max-width: 250px;
+          margin: 0 auto;
+        }
+      }
+
+      .hero-header {
+        font-family: "Kurdis-CondensedBold", sans-serif;
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 1;
+        color: #343949;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        @media only screen and (max-width: 1200px) {
+          font-size: 50px;
+        }
+        @media only screen and (max-width: 1024px) {
+          font-size: 48px;
+        }
+        @media only screen and (max-width: 768px) {
+          font-size: 40px;
+          margin: 0 auto;
+        }
+        @media only screen and (max-width: 460px) {
+          font-size: 32px;
+          padding: 30px 20px;
+        }
+      }
+
+      .academy-hero-img {
+        background-image: url(imgs/academy-hero.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        width: 920px;
+        height: 370px;
+        position: relative;
+        z-index: 20;
+        padding: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        @media only screen and (max-width: 820px) {
+          width: 100%;
+          max-width: 688px;
+        }
+        @media only screen and (max-width: 768px) {
+          height: 300px;
+        }
+        @media only screen and (max-width: 640px) {
+          max-width: 520px;
+          margin: 0 auto;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .chess-piece {
+          position: absolute;
+          max-width: 216px;
+          left: -106px;
+          bottom: -80px;
+          @media only screen and (max-width: 768px) {
+            max-width: 180px;
+            bottom: -60px;
+          }
+          @media only screen and (max-width: 640px) {
+            display: none;
+          }
+        }
+
+        .academy-hero-title {
+          font-family: "Kurdis-CondensedBold", sans-serif;
+          font-size: 41px;
+          color: #ffffff;
+          text-transform: uppercase;
+          padding-left: 60px;
+          @media only screen and (max-width: 768px) {
+            font-size: 31px;
+            padding-left: 20px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.academy-below-hero {
+  padding-top: 100px;
+
+  .support-title {
+    max-width: 560px;
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  .academy-courses-cols {
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+    margin: 20px auto;
+
+    .academy-col-box {
+          font-family: "Kurdis-CondensedBold", sans-serif;
+          font-size: 19px;
+          color: #3D3D3D;
+          text-transform: uppercase;
+          width: 19%;
+          max-width: 70px;
+          height: 70px;
+          border: 1px solid #CADFEA;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 40px;
+      }
+   }
+}
+
+.courses-content-cols {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  .course-image {
+    width: 40%;
+  }
+
+  .course-col-content {
+    width: 51%;
+
+    .support-title-md {
+      max-width: 210px;
+    }
+  }
+}
+
+.academy-expect {
+  .section-three-cols {
+    display: flex;
+    justify-content: space-between;
+
+    .header-content {
+      width: 25%;
+    }
+    .support-paragraph {
+      width: 45%;
+
+       ul {
+        margin-top: -20px;
+      }
+    }
+
+    .support-title-sm {
+      margin-top: 20px;
+    }
+
+    .section-image {
+      width: 15%;
     }
   }
 }
