@@ -47,6 +47,11 @@ section {
   margin: 0 auto;
 }
 
+.inner-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .red {
   color: #c00004;
 }
@@ -133,6 +138,13 @@ button img {
 .light-blue-bg:hover {
   background-position: left;
   color: #fff;
+}
+
+.light-blue-bio {
+  background-color: #CADFEA;
+  background: linear-gradient(to left, #CADFEA 50%, #343949 50%) right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
 }
 
 .white {
@@ -1490,7 +1502,7 @@ button img {
 
 /** Footer **/
 footer {
-  margin-top: -5vw;
+  margin-top: -5.5vw;
   position: relative;
   overflow: hidden;
 }
@@ -1548,6 +1560,11 @@ footer {
   justify-content: space-between;
   padding-top: 9vw;
   padding-bottom: 3vw;
+}
+@media only screen and (max-width: 1024px) {
+  .footer-top .f-two-cols {
+    padding-top: 13vw;
+  }
 }
 @media only screen and (max-width: 768px) {
   .footer-top .f-two-cols {
@@ -1907,6 +1924,32 @@ footer {
 @media only screen and (max-width: 640px) {
   .support-paragraph li:before {
     top: 5px;
+  }
+}
+
+.support-title-md {
+  font-family: "Kurdis-CondensedSemiBold", sans-serif;
+  font-size: 30px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .support-title-md {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .support-title-md {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .support-title-md {
+    font-size: 19px;
   }
 }
 
@@ -2539,7 +2582,7 @@ section.events .events-cols .events-btn {
 }
 @media only screen and (max-width: 820px) {
   .expert-diagonal-white {
-    margin-top: -80px;
+    margin-top: -99px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -2655,4 +2698,83 @@ section.events .events-cols .events-btn {
     height: 120px;
     width: 90%;
   }
+}
+
+/** Expert pages **/
+@media only screen and (max-width: 1024px) {
+  .full-bio {
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .full-bio {
+    padding: 0;
+  }
+}
+.full-bio .light-blue-bio {
+  position: relative;
+  max-width: 1000px;
+  padding: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .full-bio .light-blue-bio {
+    padding: 60px 30px 0;
+  }
+}
+.full-bio .light-blue-bio .support-paragraph {
+  max-width: 610px;
+}
+@media only screen and (max-width: 1024px) {
+  .full-bio .light-blue-bio .support-paragraph {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .full-bio .light-blue-bio .support-paragraph {
+    max-width: unset;
+  }
+}
+.full-bio .light-blue-bio .image-flyover {
+  position: absolute;
+  max-width: 480px;
+  right: -50px;
+  bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .full-bio .light-blue-bio .image-flyover {
+    max-width: 390px;
+    right: -30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .full-bio .light-blue-bio .image-flyover {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .full-bio .light-blue-bio button {
+    width: 110%;
+    margin: 0 -30px;
+  }
+}
+
+.expert-social-channel {
+  overflow: hidden;
+}
+.expert-social-channel .youtube-outer {
+  position: relative;
+  height: 300px;
+}
+.expert-social-channel .youtube-slider {
+  display: flex;
+  position: absolute;
+  right: -20%;
+}
+.expert-social-channel .youtube-slider .vid-tile {
+  max-width: 315px;
+  flex: 1;
+  margin-right: 20px;
 }/*# sourceMappingURL=styles.css.map */
