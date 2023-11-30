@@ -12,12 +12,17 @@
                   <ul class="submenu hidden">
                       <li><a>Strategy Sessions</a></li>
                       <li><a href="events.html">Events</a></li>
-                      <li><a>Bet-David Academy</a></li>
+                      <li><a href="academy.html">Bet-David Academy</a></li>
                       <li><a>1:1 Consulting</a></li>
-                      <li><a>Case Studies</a></li>
+                      <li><a href="case-studies-main.html">Case Studies</a></li>
                   </ul>
               </li>
-              <li><a href="about.html">About</a></li>
+              <li class="has-submenu"><a href="about.html">About</a>
+                <ul class="submenu hidden">
+                  <li><a href="expert-patrick.html">Patrick Bet-David</a></li>
+                  <li><a href="#">Thomas Ellsworth</a></li>
+                </ul>
+              </li>
               <li><a href="#">Careers</a></li>
             </ul>
             <div class="top-header-inner-inner">
@@ -27,9 +32,9 @@
             
               <div id="menu">
                   <ul>
-                    <li><a href="#">Our Philosophy</a></li>
+                    <li><a href="philosophy.html">Our Philosophy</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#">Careers</a></li>
                   </ul>
               </div>
@@ -68,7 +73,7 @@
 
   customElements.define('main-nav', Nav);
 
-/** Reusable Footer **/
+/** Big Reusable Footer **/
   class Footer extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `    
@@ -124,3 +129,27 @@
   }
 
   customElements.define('main-footer', Footer);
+
+
+  /** Contact Page Footer */
+  class ContactFooter extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `    
+      <footer>
+        <div class="white-footer blue">
+            <div class="footer-inner container">
+                <div class="footer-links dark-blue">
+                    <p>Contact</p>
+                    <p>Privacy</p>
+                    <p>Terms of Use</p>
+                    <p>Do not sell or share my data</p>
+                    <p>©bet-david consulting. All Rights Reserved 2023.</p>
+                </div>
+            </div>
+        </div>
+     </footer>    
+      `;
+    }
+  }
+
+  customElements.define('contact-footer', ContactFooter);

@@ -10,9 +10,15 @@
   font-size: 8.3333333333px;
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   container: wheel/size;
-  padding: 10%;
+  padding: 1%;
   min-width: 300px;
   min-height: 300px;
+}
+@media only screen and (max-width: 1024px) {
+  #wheel-container {
+    width: 430px;
+    height: 430px;
+  }
 }
 
 #wheel-container h1,
@@ -458,5 +464,10 @@ div.contents div.slice-content.AquiredMerged {
   }
 }
 div.section-image.wheel {
-  width: 100%;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  div.section-image.wheel {
+    width: 100%;
+  }
 }/*# sourceMappingURL=fivebyfive.css.map */

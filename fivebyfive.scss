@@ -23,10 +23,15 @@ $off-white-color: #cadfea;
   font-size: calc($outer-circle-size / 60);
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   container: wheel / size;
-  padding: 10%;
+  padding: 1%;
   min-width: 300px;
   min-height: 300px;
+  @media only screen and (max-width: 1024px) {
+    width: 430px;
+    height: 430px;
+  }
 }
+
   
 #wheel-container h1,
 h2 {
@@ -536,5 +541,8 @@ div.contents div.slice-content.AquiredMerged {
 }
 
 div.section-image.wheel {
-  width: 100%;
+  width: 50%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
