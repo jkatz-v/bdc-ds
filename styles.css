@@ -55,6 +55,9 @@ section {
 a {
   text-decoration: none;
 }
+a:hover {
+  cursor: pointer;
+}
 
 .red {
   color: #c00004;
