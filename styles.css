@@ -3538,4 +3538,31 @@ section.events .events-cols .events-btn {
   .contact-chess-piece img {
     display: none;
   }
+}
+
+div.course {
+  display: none;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+div.course.active {
+  display: block;
+  opacity: 1;
+}
+
+div.blue-bg {
+  background: linear-gradient(to left, white 50%, #CADFEA 50%) right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  color: #343949 !important;
+  cursor: pointer;
+}
+div.blue-bg:hover {
+  background-position: left;
+}
+
+div.blue-bg.active {
+  background: #343949;
+  color: white !important;
 }/*# sourceMappingURL=styles.css.map */
