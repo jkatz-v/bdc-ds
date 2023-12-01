@@ -52,6 +52,10 @@ section {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .red {
   color: #c00004;
 }
@@ -276,7 +280,7 @@ button img {
   background-color: #fff;
   z-index: 1;
   padding: 10px 0px;
-  width: 210%;
+  width: 13.5vw;
   display: none;
 }
 .top-menu .submenu.visible {
@@ -3412,6 +3416,42 @@ section.events .events-cols .events-btn {
 }
 
 /** Contact Page **/
+@media only screen and (max-width: 990px) {
+  .contact-hero .page-hero-inner {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .contact-hero .page-hero-inner .hero-content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .contact-hero .page-hero-inner .hero-content .hero-header {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .contact-hero .page-hero-inner .hero-content .hero-support {
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .contact-hero .page-hero-inner .hero-form {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .contact-hero .page-hero-inner .hero-form .form {
+    max-width: unset;
+  }
+}
+
 .form {
   background: #fff;
   padding: 38px;
@@ -3426,12 +3466,28 @@ section.events .events-cols .events-btn {
 }
 
 .white-footer {
-  padding: 70px 20px 20px;
+  padding: 230px 20px 20px;
+}
+@media only screen and (max-width: 990px) {
+  .white-footer {
+    padding: 53vw 20px 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .white-footer {
+    padding: 30vw 20px 20px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .white-footer {
+    padding: 20vw 20px 20px;
+  }
 }
 .white-footer .footer-inner {
   display: flex;
   align-items: flex-end;
   max-width: 1200px;
+  position: relative;
 }
 @media only screen and (max-width: 640px) {
   .white-footer .footer-inner {
@@ -3445,7 +3501,7 @@ section.events .events-cols .events-btn {
   font-size: 16px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  max-width: 700px;
+  /* max-width: 700px; */
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -3465,16 +3521,18 @@ section.events .events-cols .events-btn {
     text-align: center;
   }
 }
-.white-footer .footer-inner .chess-pieces img {
-  max-width: 320px;
+
+.contact-chess-piece {
+  position: absolute;
+  bottom: -14%;
+  z-index: 30;
+  left: 30%;
 }
-@media only screen and (max-width: 640px) {
-  .white-footer .footer-inner .chess-pieces img {
-    max-width: 240px;
-  }
+.contact-chess-piece img {
+  max-width: 250px;
 }
-@media only screen and (max-width: 460px) {
-  .white-footer .footer-inner .chess-pieces img {
-    max-width: 220px;
+@media only screen and (max-width: 990px) {
+  .contact-chess-piece img {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

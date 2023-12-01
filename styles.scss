@@ -64,6 +64,10 @@ section {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 $red: #c00004;
 
 .red {
@@ -284,7 +288,7 @@ $light-blue-bg: #CADFEA;
     background-color: #fff;
     z-index:1;
     padding:10px 0px;
-    width: 210%;
+    width: 13.5vw;
     display: none;
   }
 
@@ -3040,6 +3044,50 @@ section.events {
 
 /** Contact Page **/
 
+.contact-hero {
+  .page-hero-inner {
+    @media only screen and (max-width: 990px) {
+      flex-wrap: wrap;
+    }
+    
+    .hero-content {
+      @media only screen and (max-width: 990px) {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .hero-header {
+        @media only screen and (max-width: 990px) {
+          margin: 0 auto;
+        }
+      }
+
+      .hero-support {
+        @media only screen and (max-width: 990px) {
+          margin: 20px auto;
+        }
+      }
+    }
+
+    .hero-form {
+      @media only screen and (max-width: 990px) {
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .form {
+        @media only screen and (max-width: 990px) {
+          max-width: unset;
+        }
+      }
+    }
+
+  }
+}
+
 .form {
   background: #fff;
   padding: 38px;
@@ -3052,12 +3100,22 @@ section.events {
 }
 
 .white-footer {
-  padding:70px 20px 20px;
+  padding:230px 20px 20px;
+  @media only screen and (max-width: 990px) {
+    padding:53vw 20px 20px;
+  }
+  @media only screen and (max-width: 640px) {
+    padding:30vw 20px 20px;
+  }
+  @media only screen and (max-width: 460px) {
+    padding:20vw 20px 20px;
+  }
 
   .footer-inner {
     display: flex;
     align-items: flex-end;
     max-width: 1200px;
+    position: relative;
 
     @media only screen and (max-width: 640px) {
       flex-direction: column-reverse;
@@ -3070,7 +3128,7 @@ section.events {
       font-size: 16px;
       letter-spacing: 0.8px;
       text-transform: uppercase;
-      max-width: 700px;
+      /* max-width: 700px; */
       padding-top: 15px;
       padding-bottom: 10px;
 
@@ -3089,18 +3147,19 @@ section.events {
         }
       }
     }
+  }
+}
 
-    .chess-pieces {
-      img {
-        max-width: 320px;
+.contact-chess-piece {
+  position: absolute;
+  bottom: -14%;
+  z-index: 30;
+  left: 30%;
 
-        @media only screen and (max-width: 640px) {
-          max-width: 240px;
-        }
-        @media only screen and (max-width: 460px) {
-          max-width: 220px;
-        }
-      }
+  img {
+    max-width: 250px;
+    @media only screen and (max-width: 990px) {
+      display: none;
     }
   }
 }

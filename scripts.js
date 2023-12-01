@@ -23,7 +23,7 @@
                   <li><a href="#">Thomas Ellsworth</a></li>
                 </ul>
               </li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="https://valuetainment.com/jobs/" target="_blank">Careers</a></li>
             </ul>
             <div class="top-header-inner-inner">
               <div id="burger-menu">
@@ -90,7 +90,7 @@
                       What kind of leader are You?
                       What is your sales style?
                   </div>
-                  <button class="red-bg">Start the quiz <img src="imgs/chevron-right.svg"></button>
+                  <a href="https://quiz.pbdquiz.com/sf/2fc04c39" target="_blank"><button class="red-bg">Start the quiz <img src="imgs/chevron-right.svg"></button></a>
               </div>
               <div class="f-col-quote">
                   <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" width="100" height="85" viewBox="0 0 100 85" fill="none">
@@ -111,7 +111,7 @@
       <div class="diagonal-footer blue">
           <div class="footer-inner container">
               <div class="footer-links dark-blue">
-                  <p>Contact</p>
+                  <a href="contact.html"><p>Contact</p></a>
                   <p>Privacy</p>
                   <p>Terms of Use</p>
                   <p>Do not sell or share my data</p>
@@ -145,6 +145,7 @@
                     <p>Do not sell or share my data</p>
                     <p>©bet-david consulting. All Rights Reserved 2023.</p>
                 </div>
+                
             </div>
         </div>
      </footer>    
