@@ -119,13 +119,18 @@ button img {
 
 .mobile-hero-btn {
   width: 100%;
-  justify-content: flex-start;
-  padding: 15px 5vw;
+  align-self: flex-start;
+  margin-left: 0;
+  background-color: #c00004;
 }
 @media only screen and (min-width: 641px) {
   .mobile-hero-btn {
     display: none;
   }
+}
+.mobile-hero-btn button {
+  padding: 5px 25px;
+  margin-left: 0;
 }
 
 .dark-blue-bg {
@@ -927,6 +932,7 @@ button img {
 #portfolio-companies {
   margin-top: 100px;
   margin-bottom: 100px;
+  padding: 0;
 }
 #portfolio-companies .portfolio-header {
   font-family: "Kurdis-Condensed", sans-serif;
@@ -942,6 +948,33 @@ button img {
 }
 #portfolio-companies .portfolio-logos .p-logo {
   padding: 10px;
+}
+@media only screen and (max-width: 640px) {
+  #portfolio-companies .carousel-container {
+    overflow: hidden;
+  }
+  #portfolio-companies .portfolio-logos {
+    display: flex;
+    animation: scrollLogos 20s linear infinite; /* Adjust animation duration as needed */
+    white-space: nowrap; /* Prevent wrapping of logos */
+  }
+  #portfolio-companies .p-logo {
+    flex: 0 0 auto;
+    padding: 0 10px;
+    display: inline-block; /* Display logos in a line */
+  }
+  #portfolio-companies .p-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  @keyframes scrollLogos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 #plan-moves {
@@ -1840,6 +1873,11 @@ footer {
     width: 100%;
   }
 }
+@media only screen and (max-width: 640px) {
+  .section-content {
+    margin: 30px auto;
+  }
+}
 
 .support-title {
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
@@ -2008,7 +2046,7 @@ footer {
 }
 @media only screen and (max-width: 640px) {
   .section-image {
-    width: 90%;
+    width: 97%;
   }
 }
 
@@ -2046,12 +2084,12 @@ footer {
 }
 .diagonal-white .container {
   display: flex;
-  align-items: flex-end;
   padding: 0 10px;
 }
 @media only screen and (max-width: 640px) {
   .diagonal-white .container {
     padding: 0;
+    align-items: flex-end;
   }
 }
 .diagonal-white .container .r-hero-cta {
@@ -2099,7 +2137,6 @@ footer {
 }
 .diagonal-white .diagonal-hero {
   height: 80px;
-  /* max-height: 80px; */
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 51%, #fff 25%);
   width: 100%;
   position: absolute;
@@ -2108,6 +2145,7 @@ footer {
 }
 @media only screen and (max-width: 640px) {
   .diagonal-white .diagonal-hero {
+    height: 110px;
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 70%, #fff 25%);
     margin-bottom: -1px;
   }

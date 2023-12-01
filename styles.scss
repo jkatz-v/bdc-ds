@@ -132,9 +132,15 @@ button {
   @media only screen and (min-width: 641px) {
     display: none;
   }
+
   width: 100%;
-  justify-content: flex-start;
-  padding: 15px 5vw;
+  align-self: flex-start;
+  margin-left: 0;
+  background-color: $red;
+  button {
+    padding: 5px 25px;
+    margin-left: 0;
+  }
 }
 
 $dark-blue: #343949;
@@ -863,6 +869,7 @@ $light-blue-bg: #CADFEA;
 #portfolio-companies {
   margin-top: 100px;
   margin-bottom: 100px;
+  padding: 0;
 
   .portfolio-header {
     font-family: "Kurdis-Condensed", sans-serif;
@@ -881,6 +888,39 @@ $light-blue-bg: #CADFEA;
       padding: 10px;
     }
   }
+
+  @media only screen and (max-width: 640px) {
+    .carousel-container {
+      overflow: hidden;
+    }
+    
+    .portfolio-logos {
+      display: flex;
+      animation: scrollLogos 20s linear infinite; /* Adjust animation duration as needed */
+      white-space: nowrap; /* Prevent wrapping of logos */
+    }
+    
+    .p-logo {
+      flex: 0 0 auto;
+      padding: 0 10px;
+      display: inline-block; /* Display logos in a line */
+    }
+    
+    .p-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    @keyframes scrollLogos {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+  
 }
 
 #plan-moves {
@@ -1685,6 +1725,9 @@ footer {
     margin-bottom: 30px;
     width: 100%;
   }
+  @media only screen and (max-width: 640px) {
+    margin: 30px auto;
+  }
 }
 
 .support-title {
@@ -1820,7 +1863,7 @@ footer {
     padding: 10px;
   }
   @media only screen and (max-width: 640px) {
-    width: 90%;
+    width: 97%;
   }
 }
 
@@ -1851,10 +1894,10 @@ footer {
 
   .container {
     display: flex;
-    align-items: flex-end;
     padding: 0 10px;
     @media only screen and (max-width: 640px) {
       padding: 0;
+      align-items: flex-end;
     }
 
     .r-hero-cta {
@@ -1895,13 +1938,13 @@ footer {
 
   .diagonal-hero {
     height: 80px;
-   /* max-height: 80px; */
     background-image: linear-gradient(135deg,rgba(255,255,255,0) 51%,#fff 25%);
     width: 100%;
     position: absolute;
     right:0;
     z-index:2;
     @media only screen and (max-width: 640px) {
+      height: 110px;
       background-image: linear-gradient(135deg,rgba(255,255,255,0) 70%,#fff 25%);
       margin-bottom: -1px;
     }
