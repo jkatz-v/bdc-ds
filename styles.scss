@@ -3196,3 +3196,25 @@ div.blue-bg.active {
   background: $dark-blue;
   color: white !important;
 }
+
+div.q-author {
+  padding-top: 30px;
+  font-family: "Kurdis-Condensed", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  @media only screen and (max-width: 768px) {
+    font-size: 22px;
+  }
+  @media only screen and (max-width: 640px) {
+    font-size: 19px;
+  }
+  @media only screen and (max-width: 460px) {
+    font-size: 16px;
+  }
+}
+
+div.hero-content > div.q-author {
+  text-align: right;
+  padding-right: 15rem;
+}
