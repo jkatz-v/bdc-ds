@@ -1,7 +1,7 @@
 /** Reusable Navigation **/
-  class Nav extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+class Nav extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
       <nav class="top-header">
       <div class="container">
         <div class="top-header-inner">
@@ -43,48 +43,48 @@
       </div>
   </nav>
       `;
-      /** Burger Menu **/ 
-      var burgerMenu = document.getElementById('burger-menu');
-      var overlay = document.getElementById('menu');
-      burgerMenu.addEventListener('click',function(){
-        this.classList.toggle("close");
-        overlay.classList.toggle("overlay");
+    /** Burger Menu **/
+    var burgerMenu = document.getElementById('burger-menu');
+    var overlay = document.getElementById('menu');
+    burgerMenu.addEventListener('click', function () {
+      this.classList.toggle("close");
+      overlay.classList.toggle("overlay");
+    });
+
+
+    /** Top Nav **/
+    const submenuItems = document.querySelectorAll('.has-submenu');
+
+    submenuItems.forEach(item => {
+      const submenu = item.querySelector('.submenu');
+
+      // Show submenu when hovering over "has-submenu" or the submenu itself
+      item.addEventListener('mouseover', () => {
+        submenu.classList.add('visible');
       });
 
-
-      /** Top Nav **/
-      const submenuItems = document.querySelectorAll('.has-submenu');
-
-        submenuItems.forEach(item => {
-          const submenu = item.querySelector('.submenu');
-
-          // Show submenu when hovering over "has-submenu" or the submenu itself
-          item.addEventListener('mouseover', () => {
-            submenu.classList.add('visible');
-          });
-
-          // Hide submenu when mouse leaves "has-submenu" or the submenu itself
-          item.addEventListener('mouseleave', () => {
-            submenu.classList.remove('visible');
-          });
-        });
-    }
+      // Hide submenu when mouse leaves "has-submenu" or the submenu itself
+      item.addEventListener('mouseleave', () => {
+        submenu.classList.remove('visible');
+      });
+    });
   }
+}
 
-  customElements.define('main-nav', Nav);
+customElements.define('main-nav', Nav);
 
 /** Big Reusable Footer **/
-  class Footer extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `    
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `    
       <footer>
       <div class="footer-top">
            <div class="f-two-cols container">
               <div class="f-col-content">
-                  <div class="red-line-header"><img src="imgs/red-line.svg" width="35">level up</div>
+                  <div class="red-line-header"><img src="imgs/red-line.svg" width="35">level up your leadership skills</div>
                   <div class="f-support-title dark-blue">
-                      Leadership 
-                      <p class="red">skills</p> 
+                      Learn about  
+                      <p class="red">yourself</p> 
                   </div>
                   <div class="f-support-paragraph dark-blue">
                       What kind of leader are You?
@@ -125,16 +125,16 @@
       
      </footer>    
       `;
-    }
   }
+}
 
-  customElements.define('main-footer', Footer);
+customElements.define('main-footer', Footer);
 
 
-  /** Contact Page Footer */
-  class ContactFooter extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `    
+/** Contact Page Footer */
+class ContactFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `    
       <footer>
         <div class="white-footer blue">
             <div class="footer-inner container">
@@ -150,7 +150,7 @@
         </div>
      </footer>    
       `;
-    }
   }
+}
 
-  customElements.define('contact-footer', ContactFooter);
+customElements.define('contact-footer', ContactFooter);
