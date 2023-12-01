@@ -880,6 +880,39 @@ $light-blue-bg: #CADFEA;
       padding: 10px;
     }
   }
+
+  @media only screen and (max-width: 640px) {
+    .carousel-container {
+      overflow: hidden;
+    }
+    
+    .portfolio-logos {
+      display: flex;
+      animation: scrollLogos 20s linear infinite; /* Adjust animation duration as needed */
+      white-space: nowrap; /* Prevent wrapping of logos */
+    }
+    
+    .p-logo {
+      flex: 0 0 auto;
+      padding: 0 10px;
+      display: inline-block; /* Display logos in a line */
+    }
+    
+    .p-logo img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    @keyframes scrollLogos {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+  
 }
 
 #plan-moves {
