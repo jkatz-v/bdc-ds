@@ -285,6 +285,7 @@ button img {
   padding: 10px 0px;
   width: 13.5vw;
   display: none;
+  margin-top: -5px;
 }
 .top-menu .submenu.visible {
   display: block;
