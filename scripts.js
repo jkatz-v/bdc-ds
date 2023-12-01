@@ -35,7 +35,7 @@
                     <li><a href="philosophy.html">Our Philosophy</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Careers</a></li>
+                    <li><a href="https://valuetainment.com/jobs/" target="_blank">Careers</a></li>
                   </ul>
               </div>
           </div>
@@ -111,10 +111,10 @@
       <div class="diagonal-footer blue">
           <div class="footer-inner container">
               <div class="footer-links dark-blue">
-                  <a href="contact.html"><p>Contact</p></a>
-                  <p>Privacy</p>
-                  <p>Terms of Use</p>
-                  <p>Do not sell or share my data</p>
+                  <a class="dark-blue" href="contact.html"><p>Contact</p></a>
+                  <a class="dark-blue" href="privacy.html"><p>Privacy</p></a>
+                  <a class="dark-blue" href="terms-of-use.html"><p>Terms of Use</p></a>
+                  <a class="dark-blue" href="privacy.html"><p>Do not sell or share my data</p></a>
                   <p>©bet-david consulting. All Rights Reserved 2023.</p>
               </div>
               <div class="chess-pieces">
