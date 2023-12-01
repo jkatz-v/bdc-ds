@@ -3538,4 +3538,59 @@ section.events .events-cols .events-btn {
   .contact-chess-piece img {
     display: none;
   }
+}
+
+div.course {
+  display: none;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+div.course.active {
+  display: block;
+  opacity: 1;
+}
+
+div.blue-bg {
+  background: linear-gradient(to left, white 50%, #CADFEA 50%) right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  color: #343949 !important;
+  cursor: pointer;
+}
+div.blue-bg:hover {
+  background-position: left;
+}
+
+div.blue-bg.active {
+  background: #343949;
+  color: white !important;
+}
+
+div.q-author {
+  padding-top: 30px;
+  font-family: "Kurdis-Condensed", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+@media only screen and (max-width: 768px) {
+  div.q-author {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  div.q-author {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  div.q-author {
+    font-size: 16px;
+  }
+}
+
+div.hero-content > div.q-author {
+  text-align: right;
+  padding-right: 15rem;
 }/*# sourceMappingURL=styles.css.map */
