@@ -66,6 +66,10 @@ section {
 
 a {
   text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 $red: #c00004;
