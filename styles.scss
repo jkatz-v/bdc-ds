@@ -1634,7 +1634,7 @@ footer {
 .section-two-cols {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -2382,27 +2382,29 @@ section.events {
     background-image: url(imgs/blue-diagonal.svg);
     background-size: cover;
     margin-top: 0;
-    width: 45%;
+    width: 44%;
+    max-width: 570px;
     position: absolute;
-    padding: 19px 5px;
+    padding: 17px 5px;
     margin-left: 70px;
+    z-index: 3;
     @media only screen and (max-width: 1024px) {
       margin-left: 50px;
       width: 50%;
     }
     @media only screen and (max-width: 640px) {
       margin-left: 0px;
-      width: 80%;
+      width: 76%;
+    }
+    @media only screen and (max-width: 460px) {
+      width: 90%;
     }
    
 
     .socials-inner {
       display: flex;
       justify-content: center;
-      width: 90%;
-      @media only screen and (max-width: 640px) {
-        width: 100%;
-      }
+      width: 100%;
     }
 
     img {
@@ -2422,21 +2424,23 @@ section.events {
     width: 100%;
     position: absolute;
     right:0;
-    z-index:2;
+    z-index:1;
     @media only screen and (max-width: 640px) {
       background-image: linear-gradient(135deg,rgba(255,255,255,0) 70%,#fff 25%);
       margin-bottom: -1px;
       height: 120px;
       width: 90%;
     }
+    @media only screen and (max-width: 460px) {
+      width: 47%;
+    }
   }
 }
 
 /** Expert pages **/
 .full-bio {
-    @media only screen and (max-width: 1024px) {
       overflow: hidden;
-    }
+    
     @media only screen and (max-width: 768px) {
       padding: 0;
     }
@@ -2479,8 +2483,7 @@ section.events {
 
     button {
       @media only screen and (max-width: 768px) {
-        width: 110%;
-        margin: 0 -30px;
+        width: 100%;
       }
     }
   }
