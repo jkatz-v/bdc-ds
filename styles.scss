@@ -451,15 +451,14 @@ $light-blue-bg: #CADFEA;
   background-image: url(imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 75vh;
- /* max-height:850px; */
+  height: 720px;
   padding-top: 120px;
   margin-top: -120px;
   @media only screen and (max-width: 1024px) {
-    height: 65vh;
+    height: 550px;
   }
   @media only screen and (max-width: 768px) {
-    height: 53vh;
+    height: 500px;
   }
   @media only screen and (max-width: 640px) {
     height: fit-content;
@@ -528,6 +527,7 @@ $light-blue-bg: #CADFEA;
       width: 40%;
       z-index: 0;
       margin-right: -9vw;
+      padding-top: 10px;
       @media only screen and (max-width: 640px) {
         width: 100%;
       }
@@ -540,20 +540,13 @@ $light-blue-bg: #CADFEA;
 }
 
 #hero-cta {
-  margin-top: -21.5vh;
+  margin-top: -200px;
   position: relative;
-  /* @media only screen and (min-width: 1920px) {
-    margin-top: -10.5vh;
-  } */
   @media only screen and (max-width: 1024px) {
-    margin-top: -20.5vh;
+    margin-top: -190px;
   }
   @media only screen and (max-width: 640px) {
-    margin-top: -28.5vh;
     padding: 0;
-  }
-  @media only screen and (max-width: 460px) {
-    margin-top: -20vh;
   }
 
   .container {
@@ -585,6 +578,7 @@ $light-blue-bg: #CADFEA;
       }
       @media only screen and (max-width: 640px) {
         width: 70%;
+        padding: 15px 15px 15px 0;
       }
       @media only screen and (max-width: 375px) {
         justify-content: flex-start;
@@ -601,29 +595,22 @@ $light-blue-bg: #CADFEA;
   }
 
   .diagonal-hero {
-    height: 18vh;
-    max-height: 140px;
+    height: 140px;
     background-image: linear-gradient(135deg,rgba(255,255,255,0) 51%,#fff 25%);
     width: 100%;
     position: absolute;
     right:0;
     z-index:2;
-    @media only screen and (max-width: 768px) {
-      height: 15vh;
-    }
     @media only screen and (max-width: 640px) {
       background-image: linear-gradient(135deg,rgba(255,255,255,0) 70%,#fff 25%);
       margin-bottom: -1px;
-    }
-    @media only screen and (max-width: 460px) {
-      height: 13vh;
     }
   }
 
 }
 
 #white-hero {
-  margin: -13vh auto 0;
+  margin: -132px auto 0;
   background-color: #ffffff;
   position: relative;
 
@@ -631,6 +618,9 @@ $light-blue-bg: #CADFEA;
   .w-hero-inner {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
 
     .w-hero-chess {
       margin-top: -46vh;
@@ -664,19 +654,24 @@ $light-blue-bg: #CADFEA;
     }
 
     .w-hero-video {
-      margin-top: -20vh;
+      margin-top: -120px;
       margin-left: -50px;
       padding-top: 10vh;
       padding-bottom: 8px;
       position: relative;
       z-index:10;
+      @media only screen and (max-width: 1024px) {
+        margin-top: -130px;
+        width: 45%;
+      }
       @media only screen and (max-width: 980px) {
         padding-top: 100px;
       }
       @media only screen and (max-width: 640px) {
         padding-top: 130px;
-        margin-top: -8vh;
+        margin-top: -30px;
         margin-left: 0;
+        width: 100%;
       }
     }
   }
@@ -1552,14 +1547,14 @@ footer {
 }
 
 .diagonal-footer {
-  margin-top: -38vh;
+  margin-top: -350px;
   background-image: url(imgs/white-footer-short.png); 
   background-size: cover;
   background-repeat: no-repeat;
   padding:0 20px;
 
   @media only screen and (max-width:1024px) {
-    margin-top: -36vh;
+    margin-top: -300px;
   }
 
   .footer-inner {
@@ -1584,6 +1579,13 @@ footer {
       @media only screen and (max-width: 460px) {
         max-width: 130px;
         margin: 0 auto;
+      }
+
+      a {
+        @media only screen and (max-width: 460px) {
+          text-align: center;
+          width: 100%;
+        }
       }
 
       p {
