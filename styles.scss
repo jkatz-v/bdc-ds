@@ -896,6 +896,7 @@ $light-blue-bg: #CADFEA;
     right: 0;
     left: 0;
     top: -110px;
+    pointer-events: none;
     @media only screen and (max-width: 1200px) {
       max-width: 1060px;
     }
@@ -918,6 +919,10 @@ $light-blue-bg: #CADFEA;
     width: 50%;
     @media only screen and (max-width: 768px) {
       width: 100%;
+    }
+
+    a > button.red-bg {
+      float:right;
     }
 
     .blue-box {
