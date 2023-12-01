@@ -20,7 +20,7 @@
               <li class="has-submenu"><a href="about.html">About</a>
                 <ul class="submenu hidden">
                   <li><a href="expert-patrick.html">Patrick Bet-David</a></li>
-                  <li><a href="#">Thomas Ellsworth</a></li>
+                  <li><a href="expert-thomas.html">Thomas Ellsworth</a></li>
                 </ul>
               </li>
               <li><a href="https://valuetainment.com/jobs/" target="_blank">Careers</a></li>
