@@ -10,10 +10,10 @@ class Nav extends HTMLElement {
               <li><a href="philosophy.html">Our Philosophy</a></li>
               <li class="has-submenu"><a href="#">Services</a>
                   <ul class="submenu hidden">
-                      <li><a>Strategy Sessions</a></li>
+                      <li><a href="strategy-sessions.html">Strategy Sessions</a></li>
                       <li><a href="events.html">Events</a></li>
                       <li><a href="academy.html">Bet-David Academy</a></li>
-                      <li><a>1:1 Consulting</a></li>
+                      <li><a href="consulting.html">1:1 Consulting</a></li>
                       <li><a href="case-studies-main.html">Case Studies</a></li>
                   </ul>
               </li>
@@ -33,7 +33,15 @@ class Nav extends HTMLElement {
               <div id="menu">
                   <ul>
                     <li><a href="philosophy.html">Our Philosophy</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li class="has-submenu"><a href="#">Services</a>
+                        <ul class="submenu hidden">
+                            <li><a href="strategy-sessions.html">Strategy Sessions</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="academy.html">Bet-David Academy</a></li>
+                            <li><a href="consulting.html">1:1 Consulting</a></li>
+                            <li><a href="case-studies-main.html">Case Studies</a></li>
+                        </ul>
+                    </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="https://valuetainment.com/jobs/" target="_blank">Careers</a></li>
                   </ul>

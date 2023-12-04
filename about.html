@@ -169,45 +169,45 @@
                 <img class="t-quote" src="imgs/quote-icon.svg">
             </div>
             <div class="testimonial-slider">
-                <div class="t-author">
+                <div class="t-author" id="wozniak-btn">
                     <img src="imgs/steve-wozniak.png">
                 </div>
-                <div class="t-author">
+                <div class="t-author hide-author" id="kiyosaki-btn">
                     <img src="imgs/Robert-Kiyosaki.png">
                 </div>
-                <div class="t-author">
+                <div class="t-author hide-author" id="hart-btn">
                     <img src="imgs/Kevin-Hart.png">
                 </div>
-                <div class="t-author">
+                <div class="t-author hide-author" id="dalio-btn">
                     <img src="imgs/Ray-Dalio.png">
                 </div>
             </div>
          </div>
          <div class="testimonial-chevron">
-            <div class="red-chevron"><img src="imgs/red-chevron.svg"></div>
-            <div class="red-chevron"><img src="imgs/red-chevron.svg" style="display:none;"></div>
-            <div class="red-chevron"><img src="imgs/red-chevron.svg" style="display:none;"></div>
-            <div class="red-chevron"><img src="imgs/red-chevron.svg" style="display:none;"></div>
+            <div class="red-chevron"><img class="wozniak" src="imgs/red-chevron.svg"></div>
+            <div class="red-chevron"><img class="kiyosaki hide-mobile" src="imgs/red-chevron.svg" style="display:none;"></div>
+            <div class="red-chevron"><img class="hart hide-mobile" src="imgs/red-chevron.svg" style="display:none;"></div>
+            <div class="red-chevron"><img class="dalio hide-mobile" src="imgs/red-chevron.svg" style="display:none;"></div>
          </div>
-         <div class="testimonial-quotes">
+         <div class="testimonial-quotes wozniak">
             <div class="q-quote">
               “I believe in and follow Patrick Bet-David. He has the drive and the fire to <span class="red">make a difference.</span>” 
             </div>
             <div class="q-author">Steve Wozniak, Apple Co-Founder</div>
         </div>
-        <div class="testimonial-quotes" style="display: none;">
+        <div class="testimonial-quotes kiyosaki hide-mobile" style="display: none;">
             <div class="q-quote">
               “As a veteran himself, Patrick has a teaching style and a story that are now <span class="red">inspiring</span> other veterans...” 
             </div>
             <div class="q-author">Robert Kiyosaki, author "Rich Dad, Poor Dad"</div>
         </div>
-        <div class="testimonial-quotes" style="display: none;">
+        <div class="testimonial-quotes hart hide-mobile" style="display: none;">
             <div class="q-quote">
               “Patrick is one of the most driven, <span class="red">goal-oriented</span> individuals that i have ever met. What he has done has <span class="red">inspired</span> so many, including myself. I am not only a friend, I am a fan.” 
             </div>
             <div class="q-author">Kevin Hart, Actor, Comedian</div>
         </div>
-        <div class="testimonial-quotes" style="display: none;">
+        <div class="testimonial-quotes dalio hide-mobile" style="display: none;">
             <div class="q-quote">
               “Patrick is one of the <span class="red">most exciting thinkers</span> i've had the chance to converse with” 
             </div>
@@ -245,5 +245,6 @@
 <main-footer></main-footer>
         
    <script src="scripts.js" async defer></script>
+   <script src="testimonials.js" async defer></script>
     </body>
 </html>

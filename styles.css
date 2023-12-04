@@ -11,6 +11,16 @@ section {
   margin: 100px 0;
   padding: 0 20px;
 }
+@media only screen and (max-width: 640px) {
+  section {
+    margin: 70px 0;
+  }
+}
+@media only screen and (max-width: 460px) {
+  section {
+    margin: 50px 0;
+  }
+}
 
 @font-face {
   font-family: "Kurdis-Condensed";
@@ -291,7 +301,7 @@ button img {
   position: absolute;
   top: 30px;
   background-color: #fff;
-  z-index: 1;
+  z-index: 30;
   padding: 10px 0px;
   width: 13.5vw;
   display: none;
@@ -1226,18 +1236,39 @@ button img {
   align-items: baseline;
   justify-content: space-around;
 }
+@media only screen and (max-width: 460px) {
+  .testimonials .testimonials-inner .testimonial-slider {
+    flex-wrap: wrap;
+  }
+}
 .testimonials .testimonials-inner .testimonial-slider .t-author {
   background: linear-gradient(134deg, #e3f5ff -8.52%, #c4dae7 68.12%);
-  flex: 1;
+  /* flex: 1; */
   height: 130px;
   display: flex;
   flex-direction: column-reverse;
   position: relative;
+  width: 25%;
+}
+@media only screen and (max-width: 460px) {
+  .testimonials .testimonials-inner .testimonial-slider .t-author {
+    width: 100%;
+  }
 }
 .testimonials .testimonials-inner .testimonial-slider .t-author img {
   max-width: 170px;
   display: flex;
   margin: 0 auto;
+}
+@media only screen and (max-width: 460px) {
+  .testimonials .testimonials-inner .testimonial-slider .t-author img {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .testimonials .testimonials-inner .testimonial-slider .hide-author {
+    display: none;
+  }
 }
 .testimonials .testimonial-chevron {
   max-width: 1100px;
@@ -2076,6 +2107,11 @@ footer {
     padding: 0;
   }
 }
+@media only screen and (max-width: 460px) {
+  .diagonal-white {
+    margin-top: -50px;
+  }
+}
 .diagonal-white .container {
   display: flex;
   padding: 0 10px;
@@ -2180,7 +2216,7 @@ footer {
   margin: 0 auto;
   justify-content: space-around;
   position: relative;
-  /* align-items: flex-end; */
+  /* align-items: flex-end;  */
   /** Events **/
   /** Contact **/
 }
@@ -2257,6 +2293,7 @@ footer {
   font-family: "Inter", sans-serif;
   font-size: 19px;
   max-width: 450px;
+  padding-top: 20px;
 }
 @media only screen and (max-width: 640px) {
   .internal-page-hero .page-hero-inner .hero-content .hero-support {
@@ -2280,12 +2317,13 @@ footer {
 }
 @media only screen and (max-width: 460px) {
   .internal-page-hero .page-hero-inner .hero-image {
-    padding: 10px 30px 0;
+    padding: 10px 30px 30px;
   }
 }
 .internal-page-hero .page-hero-inner .hero-events {
   max-width: unset;
   width: 43%;
+  padding-top: 30px;
 }
 @media only screen and (max-width: 640px) {
   .internal-page-hero .page-hero-inner .hero-events {
@@ -3021,7 +3059,7 @@ section.events .events-cols .events-btn {
   }
 }
 .academy-below-hero .support-title {
-  max-width: 560px;
+  max-width: 590px;
   text-align: center;
   margin: 0 auto 40px;
 }
@@ -3567,7 +3605,7 @@ section.events .events-cols .events-btn {
 
 .contact-chess-piece {
   position: absolute;
-  bottom: -14%;
+  bottom: -2%;
   z-index: 30;
   left: 30%;
 }
