@@ -162,3 +162,5 @@ class ContactFooter extends HTMLElement {
 }
 
 customElements.define('contact-footer', ContactFooter);
+
+/** Number animation **/

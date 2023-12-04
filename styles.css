@@ -3685,4 +3685,23 @@ div.q-author {
 div.hero-content > div.q-author {
   text-align: right;
   padding-right: 15rem;
+}
+
+/* Define the slot machine animation */
+@keyframes slotMachine {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=styles.css.map */
