@@ -33,8 +33,8 @@ class Nav extends HTMLElement {
               <div id="menu">
                   <ul>
                     <li><a href="philosophy.html">Our Philosophy</a></li>
-                    <li class="has-submenu"><a href="#">Services</a>
-                        <ul class="submenu hidden">
+                    <li class="white-bg"><a href="#">Services</a>
+                        <ul>
                             <li><a href="strategy-sessions.html">Strategy Sessions</a></li>
                             <li><a href="events.html">Events</a></li>
                             <li><a href="academy.html">Bet-David Academy</a></li>

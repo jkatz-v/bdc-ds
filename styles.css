@@ -175,6 +175,10 @@ button img {
   color: #ffffff;
 }
 
+.white-bg {
+  background-color: #ffffff;
+}
+
 .width-195 {
   max-width: 195px;
 }
@@ -315,10 +319,12 @@ button img {
   text-decoration: none;
   padding: 5px 15px;
 }
-.top-menu a:hover, .top-menu a:focus {
-  color: #ffffff;
-  background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
-  cursor: pointer;
+@media only screen and (min-width: 768px) {
+  .top-menu a:hover, .top-menu a:focus {
+    color: #ffffff;
+    background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
+    cursor: pointer;
+  }
 }
 @media only screen and (max-width: 768px) {
   .top-menu {
@@ -416,11 +422,13 @@ button img {
   padding: 5px 15px;
   display: block;
 }
-#menu li:active {
-  display: inline-block;
-  color: #ffffff;
-  background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
-  cursor: pointer;
+@media only screen and (min-width: 768px) {
+  #menu li:active {
+    display: inline-block;
+    color: #ffffff;
+    background: linear-gradient(237deg, #343949 31.34%, #16181F 100%);
+    cursor: pointer;
+  }
 }
 #menu a {
   color: #343949;
@@ -1627,7 +1635,7 @@ footer {
 }
 @media only screen and (max-width: 460px) {
   .footer-top {
-    height: 640px;
+    height: 680px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2681,12 +2689,13 @@ section.events .events-cols .events-btn {
 }
 @media only screen and (max-width: 768px) {
   .expert-diagonal-white {
-    margin-top: -100px;
+    margin-top: -70px;
   }
 }
 @media only screen and (max-width: 640px) {
   .expert-diagonal-white {
     padding: 0;
+    margin-top: -50px;
   }
 }
 .expert-diagonal-white .container {
@@ -3047,6 +3056,11 @@ section.events .events-cols .events-btn {
   .academy-page-hero .academy-page-hero-inner .academy-hero-content .academy-hero-img .academy-hero-title {
     font-size: 31px;
     padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .academy-page-hero .academy-page-hero-inner .academy-hero-content .academy-hero-img button {
+    margin-bottom: -20px;
   }
 }
 
