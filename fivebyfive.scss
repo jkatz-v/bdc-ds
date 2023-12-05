@@ -23,7 +23,7 @@ $off-white-color: #cadfea;
   font-size: calc($outer-circle-size / 60);
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   container: wheel / size;
-  padding: 1%;
+  padding: 10%;
   min-width: 300px;
   min-height: 300px;
   @media only screen and (max-width: 1024px) {
@@ -288,7 +288,7 @@ div.inner-circle div:not(.FiveFive) {
 }
 
 .AquiredMerged {
-  translate: -100% -40%;
+  translate: -200% -40%;
 }
 
 div.inner-circle > div.stage-center {
@@ -353,11 +353,11 @@ div.contents div.slice-content.selected {
 }
 
 div.contents div.slice-content.Startup {
-  translate: -24cqw -55cqh;
+  translate: -20cqw -50cqh;
 }
 
 div.contents div.slice-content.EarlyStage {
-  translate: 18cqw -30cqh;
+  translate: 18cqw -26cqh;
 }
 
 div.contents div.slice-content.MidStage {
@@ -365,11 +365,11 @@ div.contents div.slice-content.MidStage {
 }
 
 div.contents div.slice-content.Mature {
-  translate: -35cqw 15cqh;
+  translate: -45cqw 17cqh;
 }
 
 div.contents div.slice-content.AquiredMerged {
-  translate: -55cqw -38cqh;
+  translate: -62cqw -26cqh;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -391,14 +391,14 @@ div.contents div.slice-content.AquiredMerged {
   }
 
   div.contents div.slice-content ol {
-    font-size: small;
+    font-size: medium;
   }
   div.contents div.slice-content.Startup {
-    translate: -24cqw -50cqh;
+    translate: -20cqw -52cqh;
   }
 
   div.contents div.slice-content.EarlyStage {
-    translate: 18cqw -30cqh;
+    translate: 18cqw -25cqh;
   }
 
   div.contents div.slice-content.MidStage {
@@ -406,11 +406,11 @@ div.contents div.slice-content.AquiredMerged {
   }
 
   div.contents div.slice-content.Mature {
-    translate: -40cqw 16cqh;
+    translate: -50cqw 17cqh;
   }
 
   div.contents div.slice-content.AquiredMerged {
-    translate: -50cqw -35cqh;
+    translate: -65cqw -25cqh;
   }
 }
 
@@ -425,7 +425,6 @@ div.contents div.slice-content.AquiredMerged {
   $off-white-color: #cadfea;
 
   #wheel-container {
-    padding: 0;
     background: radial-gradient(
       circle calc($outer-circle-size * 0.7),
       rgba(192, 0, 130, 0.4) 0%,
@@ -437,14 +436,14 @@ div.contents div.slice-content.AquiredMerged {
   }
 
   div.contents div.slice-content ol {
-    font-size: small;
+    font-size: medium;
   }
   div.contents div.slice-content.Startup {
-    translate: -24cqw -50cqh;
+    translate: -20cqw -52cqh;
   }
 
   div.contents div.slice-content.EarlyStage {
-    translate: 18cqw -30cqh;
+    translate: 18cqw -25cqh;
   }
 
   div.contents div.slice-content.MidStage {
@@ -452,11 +451,11 @@ div.contents div.slice-content.AquiredMerged {
   }
 
   div.contents div.slice-content.Mature {
-    translate: -40cqw 16cqh;
+    translate: -50cqw 17cqh;
   }
 
   div.contents div.slice-content.AquiredMerged {
-    translate: -50cqw -35cqh;
+    translate: -65cqw -25cqh;
   }
 }
 
@@ -482,14 +481,14 @@ div.contents div.slice-content.AquiredMerged {
   }
 
   div.contents div.slice-content ol {
-    font-size: x-small;
+    font-size: small;
   }
   div.contents div.slice-content.Startup {
-    translate: -30cqw -50cqh;
+    translate: -27cqw -59cqh;
   }
 
   div.contents div.slice-content.EarlyStage {
-    translate: 12cqw -30cqh;
+    translate: 18cqw -30cqh;
   }
 
   div.contents div.slice-content.MidStage {
@@ -497,11 +496,11 @@ div.contents div.slice-content.AquiredMerged {
   }
 
   div.contents div.slice-content.Mature {
-    translate: -40cqw 16cqh;
+    translate: -60cqw 17cqh;
   }
 
   div.contents div.slice-content.AquiredMerged {
-    translate: -55cqw -35cqh;
+    translate: -75cqw -30cqh;
   }
 }
 
@@ -514,17 +513,18 @@ div.contents div.slice-content.AquiredMerged {
     );
     width: calc(200px * 0.7) !important;
     height: calc(200px * 0.7) !important;
+    translate: -2cqw;
   }
 
   div.contents div.slice-content ol {
     font-size: x-small;
   }
   div.contents div.slice-content.Startup {
-    translate: -30cqw -50cqh;
+    translate: -25cqw -50cqh;
   }
 
   div.contents div.slice-content.EarlyStage {
-    translate: 12cqw -30cqh;
+    translate: 12cqw -25cqh;
   }
 
   div.contents div.slice-content.MidStage {
@@ -532,16 +532,21 @@ div.contents div.slice-content.AquiredMerged {
   }
 
   div.contents div.slice-content.Mature {
-    translate: -40cqw 16cqh;
+    translate: -55cqw 17cqh;
   }
 
   div.contents div.slice-content.AquiredMerged {
-    translate: -55cqw -35cqh;
+    translate: -65cqw -25cqh;
   }
 }
 
 div.section-image.wheel {
-  width: 50%;
+  width: 80%;
+  
+  @media only screen and (max-width: 820px) {
+    width: 80%;
+  }
+
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
