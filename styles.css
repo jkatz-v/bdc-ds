@@ -1660,7 +1660,7 @@ button img {
   }
 }
 .form-row .form-row-inner .form-row-content {
-  width: 50%;
+  width: 49%;
 }
 @media only screen and (max-width: 768px) {
   .form-row .form-row-inner .form-row-content {
@@ -1668,7 +1668,7 @@ button img {
   }
 }
 .form-row .form-row-inner .form-row-form {
-  width: 50%;
+  width: 49%;
 }
 @media only screen and (max-width: 768px) {
   .form-row .form-row-inner .form-row-form {
@@ -1689,6 +1689,12 @@ button img {
 @media only screen and (max-width: 768px) {
   .form-row .form-row-form .form {
     max-width: unset;
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .form-row .form-row-form .form {
+    padding: 20px;
   }
 }
 
@@ -2121,7 +2127,7 @@ footer {
   color: #ffffff;
   font-weight: 400;
   line-height: 1.1;
-  max-width: 42030;
+  max-width: 420px;
   margin-top: 13px;
 }
 @media only screen and (max-width: 768px) {
@@ -3045,10 +3051,26 @@ section.events .events-cols .events-btn {
 
 .expert-social-channel {
   overflow: hidden;
+  position: relative;
+}
+.expert-social-channel .video-line {
+  position: absolute;
+  left: -16vw;
+  top: 22%;
+}
+@media only screen and (max-width: 1024px) {
+  .expert-social-channel .video-line {
+    left: -20vw;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .expert-social-channel .video-line {
+    display: none;
+  }
 }
 .expert-social-channel .youtube-outer {
   position: relative;
-  min-height: 310px;
+  /* min-height: 310px; */
   margin-right: -30%;
 }
 .expert-social-channel .youtube-slider {
@@ -3057,10 +3079,28 @@ section.events .events-cols .events-btn {
 .expert-social-channel .youtube-slider .vid-tile {
   max-width: 315px;
   flex: 1;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .expert-social-channel .youtube-slider .vid-tile img {
   border-radius: 10px;
+}
+.expert-social-channel .youtube-slider .vid-tile p {
+  font-size: 16px;
+}
+@media only screen and (max-width: 640px) {
+  .expert-social-channel .youtube-slider .vid-tile p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .expert-social-channel .youtube-slider .vid-tile p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .expert-social-channel .youtube-slider .vid-tile p {
+    font-size: 13px;
+  }
 }
 
 /** Online Academy **/

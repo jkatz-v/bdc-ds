@@ -1553,13 +1553,13 @@ $white: #ffffff;
     }
 
     .form-row-content {
-      width: 50%;
+      width: 49%;
       @media only screen and (max-width: 768px) {
         width: 100%;
       }
     }
     .form-row-form {
-      width: 50%;
+      width: 49%;
       @media only screen and (max-width: 768px) {
         width: 100%;
       }
@@ -1577,6 +1577,10 @@ $white: #ffffff;
       max-width: 580px;
       @media only screen and (max-width: 768px) {
         max-width: unset;
+        padding: 30px;
+      }
+      @media only screen and (max-width: 640px) {
+        padding: 20px;
       }
     }
   }
@@ -1954,7 +1958,7 @@ footer {
   color: #ffffff;
   font-weight: 400;
   line-height: 1.1;
-  max-width: 42030;
+  max-width: 420px;
   margin-top: 13px;
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -2762,10 +2766,23 @@ section.events {
 
 .expert-social-channel {
   overflow: hidden;
+  position: relative;
+
+  .video-line {
+    position: absolute;
+    left: -16vw;
+    top: 22%;
+    @media only screen and (max-width: 1024px) {
+      left: -20vw;
+    }
+    @media only screen and (max-width: 640px) {
+      display: none;
+    }
+  }
 
   .youtube-outer {
     position: relative;
-    min-height: 310px;
+    /* min-height: 310px; */
     margin-right:-30%;
   }
   .youtube-slider {
@@ -2775,10 +2792,23 @@ section.events {
     .vid-tile {
       max-width: 315px;
       flex: 1;
-      margin-right: 20px;
+      margin-right: 10px;
 
       img {
         border-radius: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        @media only screen and (max-width: 640px) {
+          font-size: 15px;
+        }
+        @media only screen and (max-width: 460px) {
+          font-size: 14px;
+        }
+        @media only screen and (max-width: 460px) {
+          font-size: 13px;
+        }
       }
     }
   }
