@@ -2074,6 +2074,7 @@ footer {
   .section-content {
     margin: 30px auto;
     width: 100%;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -2245,6 +2246,7 @@ footer {
   .section-image {
     width: 60%;
     padding: 10px;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 640px) {
