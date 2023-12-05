@@ -1228,7 +1228,7 @@ button img {
 @media only screen and (max-width: 460px) {
   .testimonials .testimonials-inner .slider-button {
     display: inline-block;
-    background-color: #343949;
+    background-color: #ffffff;
     border-radius: 0.2rem;
     position: absolute;
     z-index: 100;
@@ -1236,7 +1236,7 @@ button img {
     padding: 9px 18px 5px;
   }
   .testimonials .testimonials-inner .slider-button svg {
-    fill: #CADFEA;
+    fill: #343949;
   }
   .testimonials .testimonials-inner .slider-button.next {
     right: 5%;
@@ -2262,7 +2262,7 @@ footer {
 }
 @media only screen and (max-width: 640px) {
   .diagonal-white {
-    margin-top: -100px;
+    margin-top: -70px;
     padding: 0;
   }
 }
@@ -2504,6 +2504,29 @@ footer {
 @media only screen and (max-width: 460px) {
   .internal-page-hero .page-hero-inner .hero-form {
     padding: 10px 30px 0;
+  }
+}
+.internal-page-hero .hero-four {
+  justify-content: space-between;
+}
+.internal-page-hero .hero-four .hero-header {
+  font-size: 160px !important;
+}
+.internal-page-hero .hero-four .hero-support {
+  padding-top: 0 !important;
+}
+.internal-page-hero .hero-four .four-image {
+  max-width: 550px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -21%;
+  z-index: 10;
+}
+@media only screen and (max-width: 640px) {
+  .internal-page-hero .hero-four .four-image {
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -3780,6 +3803,58 @@ section.events .events-cols .events-btn {
 @media only screen and (max-width: 990px) {
   .contact-chess-piece img {
     display: none;
+  }
+}
+
+.error-footer {
+  padding: 100px 20px 20px;
+}
+@media only screen and (max-width: 990px) {
+  .error-footer {
+    padding: 25vw 20px 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .error-footer {
+    padding: 20vw 20px 20px;
+  }
+}
+.error-footer .footer-inner {
+  display: flex;
+  align-items: flex-end;
+  max-width: 1200px;
+  position: relative;
+}
+@media only screen and (max-width: 640px) {
+  .error-footer .footer-inner {
+    flex-direction: column-reverse;
+  }
+}
+.error-footer .footer-inner .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Kurdis-Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  /* max-width: 700px; */
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 460px) {
+  .error-footer .footer-inner .footer-links {
+    max-width: 130px;
+    margin: 0 auto;
+  }
+}
+.error-footer .footer-inner .footer-links p {
+  margin-right: 13px;
+}
+@media only screen and (max-width: 640px) {
+  .error-footer .footer-inner .footer-links p {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
   }
 }
 

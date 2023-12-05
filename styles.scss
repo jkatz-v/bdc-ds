@@ -1146,7 +1146,7 @@ $white: #ffffff;
 
       @media only screen and (max-width: 460px) {
         display: inline-block;
-        background-color: $dark-blue;
+        background-color: $white;
         border-radius: 0.2rem;
         position: absolute;
         z-index: 100;
@@ -1154,7 +1154,7 @@ $white: #ffffff;
         padding: 9px 18px 5px;
     
         svg {
-            fill: $light-blue-bg;
+            fill: $dark-blue;
         }
           
         &.next {
@@ -2070,7 +2070,7 @@ footer {
   margin-top: -150px;
   position: relative;
   @media only screen and (max-width: 640px) {
-    margin-top: -100px;
+    margin-top: -70px;
     padding: 0;
   }
   @media only screen and (max-width: 460px) {
@@ -2265,6 +2265,33 @@ footer {
       }
       @media only screen and (max-width: 460px) {
         padding: 10px 30px 0;
+      }
+    }
+
+   
+  }
+
+  .hero-four {
+    justify-content: space-between;
+
+    .hero-header {
+      font-size: 160px !important;
+    }
+
+    .hero-support {
+      padding-top: 0 !important;
+    }
+
+    .four-image {
+      max-width: 550px;
+      width: 50%;
+      position: absolute;
+      right: 0;
+      bottom: -21%;
+      z-index: 10;
+      @media only screen and (max-width: 640px) {
+        position: relative;
+        width: 100%;
       }
     }
   }
@@ -3412,6 +3439,54 @@ section.events {
     max-width: 250px;
     @media only screen and (max-width: 990px) {
       display: none;
+    }
+  }
+}
+
+.error-footer {
+  padding:100px 20px 20px;
+  @media only screen and (max-width: 990px) {
+    padding:25vw 20px 20px;
+  }
+  @media only screen and (max-width: 640px) {
+    padding:20vw 20px 20px;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: flex-end;
+    max-width: 1200px;
+    position: relative;
+
+    @media only screen and (max-width: 640px) {
+      flex-direction: column-reverse;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      font-family: "Kurdis-Condensed", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      /* max-width: 700px; */
+      padding-top: 15px;
+      padding-bottom: 10px;
+
+      @media only screen and (max-width: 460px) {
+        max-width: 130px;
+        margin: 0 auto;
+      }
+
+      p {
+        margin-right: 13px;
+
+        @media only screen and (max-width: 640px) {
+          width: 100%;
+          margin: 10px auto;
+          text-align: center;
+        }
+      }
     }
   }
 }

@@ -3,7 +3,7 @@ class ErrorFooter extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `    
         <footer>
-          <div class="white-footer blue">
+          <div class="error-footer blue">
               <div class="footer-inner container">
                   <div class="footer-links dark-blue">
                       <p>Contact</p>
