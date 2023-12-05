@@ -1112,6 +1112,7 @@ $white: #ffffff;
 
 .testimonials {
   margin-top: 70px;
+  container-type: inline-size;
 
   .testimonials-header {
     font-family: "Kurdis-CondensedBold", sans-serif;
@@ -1140,6 +1141,34 @@ $white: #ffffff;
     margin-right: -20px;
     margin-left: -20px;
 
+    .slider-button {
+      display: none;
+
+      @media only screen and (max-width: 460px) {
+        display: inline-block;
+        background-color: $dark-blue;
+        border-radius: 0.2rem;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        padding: 9px 18px 5px;
+    
+        svg {
+            fill: $light-blue-bg;
+        }
+          
+        &.next {
+          right: 5%;
+        }
+        
+        &.prev {
+          left: 5%;
+          transform: rotate(180deg);
+        }
+
+      }
+    }
+
     .t-quote {
       position: absolute;
       width: 170px;
@@ -1161,8 +1190,27 @@ $white: #ffffff;
       display: flex;
       align-items: baseline;
       justify-content: space-around;
+      transition: all 0.3s ease-in-out;
       @media only screen and (max-width: 460px) {
-        flex-wrap: wrap;
+        overflow-x: visible;
+        min-width: max-content;
+        justify-content: space-between;
+        position: relative;
+        &.wozniak {
+          translate: -20px;
+        }
+  
+        &.kiyosaki {
+          translate: -375px;
+        }
+  
+        &.hart {
+          translate: -795px
+        }
+       
+        &.dalio {
+          translate: -1155px
+        }
       }
 
       .t-author {
@@ -1175,6 +1223,8 @@ $white: #ffffff;
         width: 25%;
         @media only screen and (max-width: 460px) {
           width: 100%;
+          margin: 0 15cqw;
+          background: transparent;
         }
 
         img {
@@ -1186,12 +1236,6 @@ $white: #ffffff;
           }
         }
       }
-
-      .hide-author {
-        @media only screen and (max-width: 460px) {
-          display: none;
-        }
-      }
     }
   }
 
@@ -1200,54 +1244,162 @@ $white: #ffffff;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    .red-chevron {
-      max-width: 100px;
-      flex: 1;
-      @media only screen and (max-width: 460px) {
-        max-width: 60px;
+
+    .chevron-wrapper {
+      width: 100%;
+      max-width: 1100px;
+
+      display: flex;
+      justify-content: center;
+
+      .red-chevron {
+        max-width: 100px;
+        position: relative;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &.wozniak {
+          left: -38%;
+        }
+
+        &.kiyosaki {
+          left: -13%;
+        }
+
+        &.hart {
+          left: 13%;
+        }
+
+        &.dalio {
+          left: 38%;
+        }
+        
+        @media only screen and (max-width: 640px) {
+          max-width: 60px;
+        }
+
+        @media only screen and (max-width: 460px) {
+          max-width: 60px;
+          left: 0 !important;
+        }
       }
     }
-  }
+    }
 
-  .testimonial-quotes {
-    position: relative;
+  .testimonial-wrapper {
+    overflow-x: hidden;
     max-width: 820px;
+    display: flex;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+    justify-content: space-between;
+    position: relative;
 
-    .q-quote {
-      padding-top: 40px;
-      font-family: "Kurdis-Condensed", sans-serif;
-      font-size: 44px;
-      text-transform: uppercase;
-      line-height: 1.1;
-      @media only screen and (max-width: 768px) {
-        font-size: 34px;
-      }
-      @media only screen and (max-width: 640px) {
-        font-size: 30px;
-      }
-      @media only screen and (max-width: 460px) {
-        font-size: 18px;
-      }
+    @media only screen and (max-width: 870px) {
+      max-width: 600px;
     }
 
-    .q-author {
-      padding-top: 30px;
-      font-family: "Kurdis-Condensed", sans-serif;
-      font-size: 24px;
-      text-transform: uppercase;
-      line-height: 1.1;
+    @media only screen and (max-width: 768px) {
+      max-width: 600px;
+    }
+    @media only screen and (max-width: 640px) {
+      max-width: 500px;
+    }
+    @media only screen and (max-width: 540px) {
+      max-width: 300px;
+    }
+
+    .testimonial-content {
+      display: flex;
+      width: 3820px;
+      margin: auto;
+      position: relative;
+      transition: all 0.3s ease;
+      
+      @media only screen and (max-width: 870px) {
+        width: 2760px;
+      }
+
       @media only screen and (max-width: 768px) {
-        font-size: 22px;
+        width: 2760px;
       }
       @media only screen and (max-width: 640px) {
-        font-size: 19px;
+        width: 2460px;
       }
-      @media only screen and (max-width: 460px) {
-        font-size: 16px;
+      @media only screen and (max-width: 540px) {
+        width: 1932px;
+      }
+
+      &.wozniak {
+        translate: 0;
+      }
+
+      &.kiyosaki {
+        translate: -25%;
+      }
+
+      &.hart {
+        translate: -50%;
+      }
+      
+      &.dalio {
+        translate: -75%;
+      }
+
+      .testimonial-quotes {
+        position: relative;
+        width: 820px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+
+        @media only screen and (max-width: 870px) {
+          width: 600px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: 600px;
+        }
+
+        @media only screen and (max-width: 640px) {
+          width: 500px;
+        }
+        @media only screen and (max-width: 540px) {
+          width: 300px;
+        }
+    
+        .q-quote {
+          padding-top: 40px;
+          font-family: "Kurdis-Condensed", sans-serif;
+          font-size: 44px;
+          text-transform: uppercase;
+          line-height: 1.1;
+          @media only screen and (max-width: 768px) {
+            font-size: 34px;
+          }
+          @media only screen and (max-width: 640px) {
+            font-size: 30px;
+          }
+          @media only screen and (max-width: 460px) {
+            font-size: 18px;
+          }
+        }
+    
+        .q-author {
+          padding-top: 30px;
+          font-family: "Kurdis-Condensed", sans-serif;
+          font-size: 24px;
+          text-transform: uppercase;
+          line-height: 1.1;
+          @media only screen and (max-width: 768px) {
+            font-size: 22px;
+          }
+          @media only screen and (max-width: 640px) {
+            font-size: 19px;
+          }
+          @media only screen and (max-width: 460px) {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
@@ -1348,7 +1500,7 @@ $white: #ffffff;
 
                     .cs-button {
                         display: inline-block;
-                        background-color: #CADFEA;
+                        background-color: #cadfea;
                         padding: 9px 18px 5px;
                         &:hover {
                             background-color: $red;
@@ -1799,7 +1951,7 @@ footer {
   color: #ffffff;
   font-weight: 400;
   line-height: 1.1;
-  max-width: 420px;
+  max-width: 42030;
   margin-top: 13px;
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -1998,7 +2150,7 @@ footer {
     height: 430px;
   }
   @media only screen and (max-width: 768px) {
-    height: 420px;
+    height: 42030;
   }
   @media only screen and (max-width: 640px) {
     height: fit-content;
