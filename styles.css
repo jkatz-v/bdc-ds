@@ -666,6 +666,11 @@ button img {
   background-color: #ffffff;
   position: relative;
 }
+@media only screen and (max-width: 460px) {
+  #white-hero {
+    margin: -90px auto 0;
+  }
+}
 #white-hero .w-hero-inner {
   display: flex;
   justify-content: space-between;
@@ -2055,7 +2060,7 @@ footer {
   max-width: 35px;
   margin-right: 13px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .red-line-header img {
     display: none;
   }
@@ -2067,8 +2072,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .section-content {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     width: 100%;
   }
 }
@@ -2861,11 +2865,6 @@ section.events .events-cols .events-btn {
     margin-top: -99px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .expert-diagonal-white {
-    margin-top: -70px;
-  }
-}
 @media only screen and (max-width: 640px) {
   .expert-diagonal-white {
     padding: 0;
@@ -3047,17 +3046,19 @@ section.events .events-cols .events-btn {
 }
 .expert-social-channel .youtube-outer {
   position: relative;
-  height: 300px;
+  min-height: 310px;
+  margin-right: -30%;
 }
 .expert-social-channel .youtube-slider {
   display: flex;
-  position: absolute;
-  right: -20%;
 }
 .expert-social-channel .youtube-slider .vid-tile {
   max-width: 315px;
   flex: 1;
   margin-right: 20px;
+}
+.expert-social-channel .youtube-slider .vid-tile img {
+  border-radius: 10px;
 }
 
 /** Online Academy **/
@@ -3910,7 +3911,7 @@ div.q-author {
 
 div.hero-content > div.q-author {
   text-align: right;
-  padding-right: 15rem;
+  max-width: 450px;
 }
 
 /* Define the slot machine animation */

@@ -645,6 +645,9 @@ $white: #ffffff;
   margin: -132px auto 0;
   background-color: #ffffff;
   position: relative;
+  @media only screen and (max-width: 460px) {
+    margin: -90px auto 0;
+  }
 
 
   .w-hero-inner {
@@ -1902,7 +1905,7 @@ footer {
   img {
     max-width: 35px;
     margin-right: 13px;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -1912,8 +1915,7 @@ footer {
   width: 55%;
   max-width: 450px;
   @media only screen and (max-width: 768px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     width: 100%;
   }
   @media only screen and (max-width: 640px) {
@@ -2602,9 +2604,6 @@ section.events {
   @media only screen and (max-width: 820px) {
     margin-top: -99px;
   }
-  @media only screen and (max-width: 768px) {
-    margin-top: -70px;
-  }
   @media only screen and (max-width: 640px) {
     padding: 0;
     margin-top: -50px;
@@ -2764,17 +2763,21 @@ section.events {
 
   .youtube-outer {
     position: relative;
-    height: 300px;
+    min-height: 310px;
+    margin-right:-30%;
   }
   .youtube-slider {
     display: flex;
-    position: absolute;
-    right: -20%;
+
 
     .vid-tile {
       max-width: 315px;
       flex: 1;
       margin-right: 20px;
+
+      img {
+        border-radius: 10px;
+      }
     }
   }
 }
@@ -3538,7 +3541,7 @@ div.q-author {
 
 div.hero-content > div.q-author {
   text-align: right;
-  padding-right: 15rem;
+  max-width: 450px;
 }
 
 /* Define the slot machine animation */

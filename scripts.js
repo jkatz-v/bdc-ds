@@ -167,14 +167,14 @@ customElements.define('contact-footer', ContactFooter);
 const counters = document.querySelectorAll(".counters span");
 const container = document.querySelector(".counters");
 //Variable that tracks if the counters have been activated
-let active = false;
+let activated = false;
 
 //Add scroll event to the page
 window.addEventListener("scroll", () => {
   /*If the page is crolled to the containers element 
   and the counters are not activated */
   if(
-    pageYOffset > container.offsetTop - container.offsetHeight - 200
+    pageYOffset > container.offsetTop - container.offsetHeight - 800
     && activated === false
   ) {
     counters.forEach(counter => {

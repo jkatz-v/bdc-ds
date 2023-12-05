@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
         <main-nav></main-nav>
@@ -115,25 +116,27 @@
                       </div>
                   </div>
                 </div>
+                <div class="support-title-md">Latest Youtube Videos</div>
                 <div class="youtube-outer">
-                    <div class="support-title-md">Latest Youtube Videos</div>
-                    <div class="youtube-slider">
-                        <div class="vid-tile">
+                    <div class="swiper mySwiper">
+                    <div class="youtube-slider swiper-wrapper">
+                        <div class="vid-tile swiper-slide">
                             <img src="imgs/tom-brady-vid.jpeg">
                             <p class="vid-title">Tom Brady Opens up - 7th Ring Motivation MJ or Belichick | Enemies | Style of</p>
                         </div>
-                        <div class="vid-tile">
+                        <div class="vid-tile swiper-slide">
                             <img src="imgs/tate-vid.jpeg">
                             <p class="vid-title">Andrew Tate UNCENSORED Footage - Being Spied On | Jail Stories | Romanian Legal</p>
                         </div>
-                        <div class="vid-tile">
+                        <div class="vid-tile swiper-slide">
                             <img src="imgs/khabib-vid.jpeg">
                             <p class="vid-title">Khabib Nurmagomedov Opens Up - Possible Comeback | LGBTQ | Hardest Puncher |</p>
                         </div>
-                        <div class="vid-tile">
+                        <div class="vid-tile swiper-slide">
                             <img src="imgs/tristan-vid.jpeg">
                             <p class="vid-title">Tristan Tate EXCLUSIVE INTERVIEW - Jail | Brotherhood | Politics | Religion | Fashion</p>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -169,5 +172,7 @@
 <main-footer></main-footer>
         
    <script src="scripts.js" async defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="video-carousel.js"></script>
     </body>
 </html>
