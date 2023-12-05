@@ -1019,7 +1019,7 @@ button img {
   margin: 0 auto;
   right: 0;
   left: 0;
-  top: -110px;
+  top: -190px;
   pointer-events: none;
 }
 @media only screen and (max-width: 1200px) {
@@ -3411,7 +3411,7 @@ section.events .events-cols .events-btn {
   margin-top: 20px;
 }
 .academy-expect .section-three-cols .section-image {
-  width: 15%;
+  width: 12%;
 }
 @media only screen and (max-width: 640px) {
   .academy-expect .section-three-cols .section-image {
