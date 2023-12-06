@@ -22,6 +22,11 @@ section {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
 @font-face {
   font-family: "Kurdis-Condensed";
   src: url("fonts/Kurdis-Condensed.woff2") format("woff2"), url("fonts/Kurdis-Condensed.woff") format("woff");
@@ -81,6 +86,9 @@ a:hover {
 }
 .red-bg:hover {
   background-position: left;
+}
+.red-bg a {
+  color: white;
 }
 
 button {
@@ -442,7 +450,7 @@ button img {
 #menu.overlay {
   visibility: visible;
   opacity: 1;
-  padding-top: 100px;
+  padding-top: 80px;
   background: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
@@ -2013,6 +2021,7 @@ footer {
 
 .solutions-step {
   margin: 100px auto;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .solutions-step button {
@@ -3603,6 +3612,7 @@ section.events .events-cols .events-btn {
   margin-top: 10px;
   margin-bottom: 30px;
   max-width: 310px;
+  min-height: 62px;
 }
 @media only screen and (max-width: 1024px) {
   .case-studies-flexer .cs-flex-box .cs-title {
@@ -3619,6 +3629,7 @@ section.events .events-cols .events-btn {
     font-size: 20px;
     margin: 15px auto;
     max-width: unset;
+    min-height: unset;
   }
 }
 .case-studies-flexer .cs-flex-box .cs-button {

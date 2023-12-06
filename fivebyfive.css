@@ -21,8 +21,8 @@
   }
 }
 
-#wheel-container h1,
-h2 {
+#wheel-container h5,
+h6 {
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Kurdis-CondensedBold", sans-serif;
@@ -234,14 +234,14 @@ div.inner-circle > div {
   text-align: center;
 }
 
-div.inner-circle h1 {
+div.inner-circle h5 {
   font-size: 5cqh !important;
   margin: 0;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-div.inner-circle h2 {
+div.inner-circle h6 {
   font-size: 4cqh !important;
 }
 
@@ -250,9 +250,9 @@ div.inner-circle h2 {
   animation-fill-mode: forwards;
 }
 
-div.inner-circle div.FiveFive h1 {
+div.inner-circle div.FiveFive h5 {
   font-size: 15cqh !important;
-  translate: 0 2cqh;
+  translate: 0 1cqh;
 }
 
 div.inner-circle div:not(.FiveFive) {
@@ -269,12 +269,12 @@ div.inner-circle div:not(.FiveFive) {
 }
 
 .MidStage {
-  translate: 90% 140%;
+  translate: 90% 190%;
   white-space: nowrap;
 }
 
 .Mature {
-  translate: -100% 140%;
+  translate: -100% 190%;
 }
 
 .AquiredMerged {
@@ -286,11 +286,11 @@ div.inner-circle > div.stage-center {
   color: white;
 }
 
-div.inner-circle > div.stage-center h1 {
+div.inner-circle > div.stage-center h5 {
   font-size: 1.8rem;
 }
 
-div.inner-circle > div.stage-center h2 {
+div.inner-circle > div.stage-center h6 {
   font-size: 2rem;
   color: white !important;
 }
@@ -299,7 +299,7 @@ div.inner-circle > div.stage-hover {
   scale: 1.1;
 }
 
-div.inner-circle > div.stage-hover h2 {
+div.inner-circle > div.stage-hover h6 {
   color: rgb(192, 0, 4);
 }
 
@@ -327,6 +327,16 @@ div.contents div.slice-content ol {
   font-size: large;
   translate: 0 1cqh;
 }
+@media only screen and (max-width: 1230px) {
+  div.contents div.slice-content ol {
+    font-size: medium;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  div.contents div.slice-content ol {
+    font-size: small;
+  }
+}
 
 div.contents div.slice-content li::before {
   content: counter(li) ". ";
@@ -343,7 +353,7 @@ div.contents div.slice-content.selected {
 }
 
 div.contents div.slice-content.Startup {
-  translate: -20cqw -50cqh;
+  translate: -20cqw -55cqh;
 }
 
 div.contents div.slice-content.EarlyStage {
@@ -366,9 +376,9 @@ div.contents div.slice-content.AquiredMerged {
   #wheel-container {
     background: radial-gradient(circle 210px, rgba(192, 0, 130, 0.4) 0%, rgba(255, 255, 255, 0) 65%);
   }
-  div.contents div.slice-content ol {
+  /* div.contents div.slice-content ol {
     font-size: medium;
-  }
+  } */
   div.contents div.slice-content.Startup {
     translate: -20cqw -52cqh;
   }
@@ -464,12 +474,7 @@ div.contents div.slice-content.AquiredMerged {
   }
 }
 div.section-image.wheel {
-  width: 80%;
-}
-@media only screen and (max-width: 820px) {
-  div.section-image.wheel {
-    width: 80%;
-  }
+  width: 50%;
 }
 @media only screen and (max-width: 768px) {
   div.section-image.wheel {

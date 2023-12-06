@@ -53,10 +53,10 @@ const drawLines = () => {
   bottomLeftLine.setAttribute("x2", 0);
   bottomLeftLine.setAttribute("y2", wheelHeight - (wheelHeight / 5) * 2);
 
-  const h1s = document.querySelectorAll("h1");
-  const h2s = document.querySelectorAll("h2");
+  const h5s = document.querySelectorAll("h5");
+  const h6s = document.querySelectorAll("h6");
 
-  h1s.forEach((h1) => (h1.style.fontSize = "15cqh"));
+  h5s.forEach((h5) => (h5.style.fontSize = "15cqh"));
 };
 
 drawLines();

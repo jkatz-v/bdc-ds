@@ -18,6 +18,11 @@ section {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
 @font-face {
   font-family: "Kurdis-Condensed";
   src: url("fonts/Kurdis-Condensed.woff2") format("woff2"),
@@ -92,6 +97,10 @@ $red: #c00004;
 
   &:hover {
     background-position: left;
+  }
+
+  a {
+    color: white;
   }
 }
 
@@ -449,7 +458,7 @@ $white: #ffffff;
 #menu.overlay {
   visibility: visible;
   opacity: 1;
-  padding-top: 100px;
+  padding-top: 80px;
   background: rgba(255, 255, 255, 0.90);
   backdrop-filter: blur(6px);
 }
@@ -1864,6 +1873,7 @@ footer {
 
 .solutions-step {
   margin: 100px auto;
+  overflow: hidden;
 
   button {
     @media only screen and (max-width: 768px) {
@@ -3249,6 +3259,7 @@ section.events {
       margin-top: 10px;
       margin-bottom: 30px;
       max-width: 310px;
+      min-height: 62px;
       @media only screen and (max-width: 1024px) {
         font-size: 24px;
       }
@@ -3259,6 +3270,7 @@ section.events {
         font-size: 20px;
         margin: 15px auto;
         max-width: unset;
+        min-height: unset;
       }
     }
 
