@@ -29,32 +29,32 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Kurdis-Condensed";
-  src: url("fonts/Kurdis-Condensed.woff2") format("woff2"), url("fonts/Kurdis-Condensed.woff") format("woff");
+  src: url("/fonts/Kurdis-Condensed.woff2") format("woff2"), url("/fonts/Kurdis-Condensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-CondensedSemiBold";
-  src: url("fonts/Kurdis-CondensedSemiBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedSemiBold.woff") format("woff");
+  src: url("/fonts/Kurdis-CondensedSemiBold.woff2") format("woff2"), url("/fonts/Kurdis-CondensedSemiBold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-SemiCondensed";
-  src: url("fonts/Kurdis-SemiCondensed.woff2") format("woff2"), url("fonts/Kurdis-SemiCondensed.woff") format("woff");
+  src: url("/fonts/Kurdis-SemiCondensed.woff2") format("woff2"), url("/fonts/Kurdis-SemiCondensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-ExtraCondensed";
-  src: url("fonts/Kurdis-ExtraCondensed.woff2") format("woff2"), url("fonts/Kurdis-ExtraCondensed.woff") format("woff");
+  src: url("/fonts/Kurdis-ExtraCondensed.woff2") format("woff2"), url("/fonts/Kurdis-ExtraCondensed.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-CondensedBold";
-  src: url("fonts/Kurdis-CondensedBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedBold.woff") format("woff");
+  src: url("/fonts/Kurdis-CondensedBold.woff2") format("woff2"), url("/fonts/Kurdis-CondensedBold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Kurdis-CondensedExtraBold";
-  src: url("fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"), url("fonts/Kurdis-CondensedExtraBold.woff") format("woff");
+  src: url("/fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"), url("/fonts/Kurdis-CondensedExtraBold.woff") format("woff");
   font-display: swap;
 }
 .container {
@@ -98,7 +98,7 @@ button {
   color: #ffffff;
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   text-transform: uppercase;
-  padding: 18px;
+  padding: 18px 18px 17px;
   border: none;
   font-size: 18px;
   line-height: 0.9;
@@ -325,7 +325,7 @@ button img {
 .top-menu a {
   color: #343949;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 6px 15px 5px;
 }
 @media only screen and (min-width: 768px) {
   .top-menu a:hover, .top-menu a:focus {
@@ -2279,6 +2279,7 @@ footer {
 /** About page **/
 .diagonal-white {
   margin-top: -150px;
+  margin-bottom: 50px;
   position: relative;
 }
 @media only screen and (max-width: 640px) {
@@ -2584,11 +2585,26 @@ footer {
     max-width: 200px;
   }
 }
+@media only screen and (max-width: 460px) {
+  .four-cols .f-col:nth-of-type(1) .f-col-title {
+    max-width: 300px;
+  }
+}
 .four-cols .f-col:nth-of-type(2) .f-col-title {
   max-width: 200px;
 }
+@media only screen and (max-width: 460px) {
+  .four-cols .f-col:nth-of-type(2) .f-col-title {
+    max-width: 300px;
+  }
+}
 .four-cols .f-col:nth-of-type(3) .f-col-title {
   max-width: 220px;
+}
+@media only screen and (max-width: 460px) {
+  .four-cols .f-col:nth-of-type(3) .f-col-title {
+    max-width: 300px;
+  }
 }
 .four-cols .f-col:nth-of-type(4) .f-col-title {
   max-width: 160px;
@@ -2596,6 +2612,11 @@ footer {
 @media only screen and (max-width: 640px) {
   .four-cols .f-col:nth-of-type(4) .f-col-title {
     max-width: 200px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .four-cols .f-col:nth-of-type(4) .f-col-title {
+    max-width: 300px;
   }
 }
 .four-cols .f-col .f-col-title {
@@ -3282,6 +3303,12 @@ section.events .events-cols .events-btn {
   .academy-page-hero .academy-page-hero-inner .academy-hero-content .academy-hero-img .academy-hero-title {
     font-size: 31px;
     padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .academy-page-hero .academy-page-hero-inner .academy-hero-content .academy-hero-img .academy-hero-title {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 @media only screen and (max-width: 640px) {

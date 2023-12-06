@@ -126,7 +126,7 @@ class Footer extends HTMLElement {
                   <p>©bet-david consulting. All Rights Reserved 2023.</p>
               </div>
               <div class="chess-pieces">
-                  <img src="imgs/footer-chess.svg">
+                  <img src="imgs/footer-chess.svg" width="320">
               </div>
           </div>
       </div>

@@ -25,43 +25,43 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Kurdis-Condensed";
-  src: url("fonts/Kurdis-Condensed.woff2") format("woff2"),
-    url("fonts/Kurdis-Condensed.woff") format("woff");
+  src: url("/fonts/Kurdis-Condensed.woff2") format("woff2"),
+    url("/fonts/Kurdis-Condensed.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Kurdis-CondensedSemiBold";
-  src: url("fonts/Kurdis-CondensedSemiBold.woff2") format("woff2"),
-    url("fonts/Kurdis-CondensedSemiBold.woff") format("woff");
+  src: url("/fonts/Kurdis-CondensedSemiBold.woff2") format("woff2"),
+    url("/fonts/Kurdis-CondensedSemiBold.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Kurdis-SemiCondensed";
-  src: url("fonts/Kurdis-SemiCondensed.woff2") format("woff2"),
-    url("fonts/Kurdis-SemiCondensed.woff") format("woff");
+  src: url("/fonts/Kurdis-SemiCondensed.woff2") format("woff2"),
+    url("/fonts/Kurdis-SemiCondensed.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Kurdis-ExtraCondensed";
-  src: url("fonts/Kurdis-ExtraCondensed.woff2") format("woff2"),
-    url("fonts/Kurdis-ExtraCondensed.woff") format("woff");
+  src: url("/fonts/Kurdis-ExtraCondensed.woff2") format("woff2"),
+    url("/fonts/Kurdis-ExtraCondensed.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Kurdis-CondensedBold";
-  src: url("fonts/Kurdis-CondensedBold.woff2") format("woff2"),
-    url("fonts/Kurdis-CondensedBold.woff") format("woff");
+  src: url("/fonts/Kurdis-CondensedBold.woff2") format("woff2"),
+    url("/fonts/Kurdis-CondensedBold.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Kurdis-CondensedExtraBold";
-  src: url("fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"),
-    url("fonts/Kurdis-CondensedExtraBold.woff") format("woff");
+  src: url("/fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"),
+    url("/fonts/Kurdis-CondensedExtraBold.woff") format("woff");
   font-display: swap;
 }
 
@@ -111,7 +111,7 @@ button {
   color: #ffffff;
   font-family: "Kurdis-CondensedSemiBold", sans-serif;
   text-transform: uppercase;
-  padding: 18px;
+  padding: 18px 18px 17px;
   border: none;
   font-size: 18px;
   line-height: 0.9;
@@ -334,7 +334,7 @@ $white: #ffffff;
   a {
     color: #343949;
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 6px 15px 5px;
 
 
    @media only screen and (min-width: 768px) {
@@ -2086,6 +2086,7 @@ footer {
 /** About page **/
 .diagonal-white {
   margin-top: -150px;
+  margin-bottom: 50px;
   position: relative;
   @media only screen and (max-width: 640px) {
     margin-top: -70px;
@@ -2341,18 +2342,27 @@ footer {
         @media only screen and (max-width: 640px) {
           max-width: 200px;
         }
+        @media only screen and (max-width: 460px) {
+          max-width: 300px;
+        }
       }
     }
 
     &:nth-of-type(2) {
       .f-col-title {
         max-width: 200px;
+        @media only screen and (max-width: 460px) {
+          max-width: 300px;
+        }
       }
     }
 
     &:nth-of-type(3) {
       .f-col-title {
         max-width: 220px;
+        @media only screen and (max-width: 460px) {
+          max-width: 300px;
+        }
       }
     }
 
@@ -2361,6 +2371,9 @@ footer {
         max-width: 160px;
         @media only screen and (max-width: 640px) {
           max-width: 200px;
+        }
+        @media only screen and (max-width: 460px) {
+          max-width: 300px;
         }
       }
     }
@@ -2958,6 +2971,10 @@ section.events {
           @media only screen and (max-width: 768px) {
             font-size: 31px;
             padding-left: 20px;
+          }
+          @media only screen and (max-width: 640px) {
+            padding-right: 10px;
+            padding-left: 10px;
           }
         }
 
