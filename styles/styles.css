@@ -353,7 +353,7 @@ button img {
 #burger-menu span,
 #burger-menu span:before,
 #burger-menu span:after {
-  background: url(imgs/burger-menu.svg);
+  background: url(../imgs/burger-menu.svg);
   display: block;
   height: 4px;
   opacity: 1;
@@ -471,7 +471,7 @@ button img {
   }
 }
 #home-hero {
-  background-image: url(imgs/bdc-hero-new.jpg);
+  background-image: url(../imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 720px;
@@ -1226,7 +1226,7 @@ button img {
   }
 }
 .testimonials .testimonials-inner {
-  background-image: url(imgs/blue-diagonal-bg.png);
+  background-image: url(../imgs/blue-diagonal-bg.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1787,7 +1787,7 @@ footer {
 }
 
 .footer-top {
-  background-image: url(imgs/blue-footer.png);
+  background-image: url(../imgs/blue-footer.png);
   background-size: cover;
   height: 90vh;
   background-position-x: 50%;
@@ -1810,7 +1810,7 @@ footer {
 }
 @media only screen and (max-width: 640px) {
   .footer-top {
-    background-image: url(imgs/mobile-footer.png);
+    background-image: url(../imgs/mobile-footer.png);
     background-position-y: 100%;
   }
 }
@@ -1953,7 +1953,7 @@ footer {
 
 .diagonal-footer {
   margin-top: -350px;
-  background-image: url(imgs/white-footer-short.png);
+  background-image: url(../imgs/white-footer-short.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 20px;
@@ -2189,7 +2189,7 @@ footer {
 }
 .support-paragraph li:before {
   content: " ";
-  background: url(imgs/red-arrow.svg) no-repeat center center/cover;
+  background: url(../imgs/red-arrow.svg) no-repeat center center/cover;
   position: absolute;
   top: 7px;
   left: 0px;
@@ -2367,7 +2367,7 @@ footer {
 }
 
 .internal-page-hero {
-  background-image: url(imgs/bdc-hero-new.jpg);
+  background-image: url(../imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 440px;
@@ -2722,7 +2722,7 @@ section.events .events-cols .events-btn {
 
 /** Expert Operators **/
 .expert-page-hero {
-  background-image: url(imgs/bdc-hero-new.jpg);
+  background-image: url(../imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 440px;
@@ -2935,7 +2935,7 @@ section.events .events-cols .events-btn {
 .expert-diagonal-white .expert-socials {
   /* background: rgb(0,0,0);
   background: linear-gradient(90deg, #16181F, #343949); */
-  background-image: url(imgs/blue-diagonal.svg);
+  background-image: url(../imgs/blue-diagonal.svg);
   background-size: cover;
   margin-top: 0;
   width: 44%;
@@ -3114,7 +3114,7 @@ section.events .events-cols .events-btn {
 
 /** Online Academy **/
 .academy-page-hero {
-  background-image: url(imgs/bdc-hero-new.jpg);
+  background-image: url(../imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 440px;
@@ -3215,7 +3215,7 @@ section.events .events-cols .events-btn {
   }
 }
 .academy-page-hero .academy-page-hero-inner .academy-hero-content .academy-hero-img {
-  background-image: url(imgs/academy-hero.jpeg);
+  background-image: url(../imgs/academy-hero.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -3438,7 +3438,7 @@ section.events .events-cols .events-btn {
 
 /** Case Studies Page hero **/
 .studies-page-hero {
-  background-image: url(imgs/case-studies-hero.png);
+  background-image: url(../imgs/case-studies-hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 120px;
