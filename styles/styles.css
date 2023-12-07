@@ -2103,7 +2103,7 @@ footer {
   font-size: 52px;
   line-height: 1.1;
   text-transform: uppercase;
-  margin-top: 13px;
+  margin-top: 18px;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 1024px) {
@@ -2812,7 +2812,7 @@ section.events .events-cols .events-btn {
   }
 }
 .expert-page-hero .expert-page-hero-inner .expert-hero-content .hero-header {
-  font-family: "Kurdis-CondensedBold", sans-serif;
+  font-family: "Kurdis-CondensedExtraBold", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   line-height: 1;

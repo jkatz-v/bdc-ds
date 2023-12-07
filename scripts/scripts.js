@@ -89,13 +89,13 @@ class Footer extends HTMLElement {
       <div class="footer-top">
            <div class="f-two-cols container">
               <div class="f-col-content">
-                  <div class="red-line-header"><img src="imgs/red-line.svg" width="35">level up your leadership skills</div>
+                  <div class="red-line-header"><img src="imgs/red-line.svg" width="35">level up your</div>
                   <div class="f-support-title dark-blue">
-                      Learn about  
-                      <p class="red">yourself</p> 
+                  LEADERSHIP 
+                      <p class="red">skills</p> 
                   </div>
                   <div class="f-support-paragraph dark-blue">
-                      What kind of leader are You?
+                      WHAT DRIVES YOU TO SUCCEED?
                       What is your sales style?
                   </div>
                   <a href="https://quiz.pbdquiz.com/sf/2fc04c39" target="_blank"><button class="red-bg">Start the quiz <img src="imgs/chevron-right.svg"></button></a>
@@ -119,6 +119,7 @@ class Footer extends HTMLElement {
       <div class="diagonal-footer blue">
           <div class="footer-inner container">
               <div class="footer-links dark-blue">
+                  <a class="dark-blue" href="https://valuetainment.com/jobs/" target="_blank"><p>Careers</p></a>
                   <a class="dark-blue" href="contact.html"><p>Contact</p></a>
                   <a class="dark-blue" href="privacy.html"><p>Privacy</p></a>
                   <a class="dark-blue" href="terms-of-use.html"><p>Terms of Use</p></a>
