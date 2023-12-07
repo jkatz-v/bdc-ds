@@ -17,8 +17,9 @@ class Nav extends HTMLElement {
                       <li><a href="case-studies-main.html">Case Studies</a></li>
                   </ul>
               </li>
-              <li class="has-submenu"><a href="about.html">About</a>
+              <li class="has-submenu"><a href="#">About</a>
                 <ul class="submenu hidden">
+                  <li><a href="about.html">About Us</a></li>
                   <li><a href="expert-patrick.html">Patrick Bet-David</a></li>
                   <li><a href="expert-thomas.html">Thomas Ellsworth</a></li>
                 </ul>
@@ -164,6 +165,18 @@ class ContactFooter extends HTMLElement {
 
 customElements.define('contact-footer', ContactFooter);
 
+/** Video lightbox **/
+function makeItPopVideo() {
+  var popup = document.getElementById("videoPopup");
+  popup.classList.toggle("show");
+}
+
+function hideMe() {
+  var popup = document.getElementByClassName("popuptext");
+  popup.classList.toggle("hide");
+}
+
+
 /** Number animation **/
 const counters = document.querySelectorAll(".counters span");
 const container = document.querySelector(".counters");
@@ -206,3 +219,5 @@ window.addEventListener("scroll", () => {
     activated = false;
   }
 });
+
+

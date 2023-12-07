@@ -57,6 +57,30 @@ h1, h2, h3, h4, h5, h6 {
   src: url("/fonts/Kurdis-CondensedExtraBold.woff2") format("woff2"), url("/fonts/Kurdis-CondensedExtraBold.woff") format("woff");
   font-display: swap;
 }
+.kurdis-cond {
+  font-family: "Kurdis-Condensed";
+}
+
+.kurdis-cond-semi-bold {
+  font-family: "Kurdis-CondensedSemiBold";
+}
+
+.kurdis-semi-cond {
+  font-family: "Kurdis-SemiCondensed";
+}
+
+.kurdis-extra-cond {
+  font-family: "Kurdis-ExtraCondensed";
+}
+
+.kurdis-cond-bold {
+  font-family: "Kurdis-CondensedBold";
+}
+
+.kurdis-cond-extra-bold {
+  font-family: "Kurdis-CondensedExtraBold";
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -96,7 +120,7 @@ button {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-family: "Kurdis-CondensedSemiBold", sans-serif;
+  font-family: "Kurdis-CondensedBold", sans-serif;
   text-transform: uppercase;
   padding: 18px 18px 17px;
   border: none;
@@ -315,7 +339,7 @@ button img {
   background-color: #fff;
   z-index: 30;
   padding: 10px 0px;
-  width: 13.5vw;
+  width: 14vw;
   display: none;
   margin-top: -5px;
 }
@@ -474,7 +498,7 @@ button img {
   background-image: url(../imgs/bdc-hero-new.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 720px;
+  height: 680px;
   padding-top: 120px;
   margin-top: -120px;
 }
@@ -507,7 +531,7 @@ button img {
   }
 }
 #home-hero .hero-inner .hero-content {
-  width: 43%;
+  width: 48%;
   padding-top: 60px;
   z-index: 1;
 }
@@ -518,7 +542,6 @@ button img {
   }
 }
 #home-hero .hero-inner .hero-content .hero-subheader {
-  font-family: "Kurdis-CondensedBold", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 4px;
@@ -540,11 +563,11 @@ button img {
   }
 }
 #home-hero .hero-inner .hero-content .hero-header {
-  font-family: "Kurdis-CondensedBold", sans-serif;
   text-transform: uppercase;
   font-size: 82px;
   line-height: 1;
   color: #343949;
+  margin-top: 12px;
 }
 @media only screen and (max-width: 1200px) {
   #home-hero .hero-inner .hero-content .hero-header {
@@ -615,7 +638,6 @@ button img {
   justify-content: center;
   align-items: center;
   width: 50%;
-  font-family: "Kurdis-Condensed", sans-serif;
   text-transform: uppercase;
   background-color: #c00004;
   color: #ffffff;
@@ -690,7 +712,7 @@ button img {
 }
 #white-hero .w-hero-inner .w-hero-chess {
   margin-top: -46vh;
-  margin-left: -7vw;
+  margin-left: -11vw;
   position: relative;
   z-index: 9;
 }
@@ -794,7 +816,6 @@ button img {
   }
 }
 #what-do .content-row .content-col .what-header {
-  font-family: "Kurdis-CondensedSemiBold", sans-serif;
   line-height: 1;
   text-transform: uppercase;
   font-size: 52px;
@@ -862,7 +883,6 @@ button img {
   }
 }
 #what-do .content-row .numbers-col .number-row .number-number {
-  font-family: "Kurdis-Condensed", sans-serif;
   font-size: 90px;
   margin-right: 20px;
 }
@@ -1015,6 +1035,8 @@ button img {
 
 #plan-moves {
   position: relative;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 @media only screen and (max-width: 768px) {
   #plan-moves {
@@ -1724,7 +1746,7 @@ button img {
 .social .social-header {
   font-family: "Kurdis-CondensedBold", sans-serif;
   text-transform: uppercase;
-  font-size: 52px;
+  font-size: 56px;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
@@ -2099,7 +2121,7 @@ footer {
 }
 
 .support-title {
-  font-family: "Kurdis-CondensedSemiBold", sans-serif;
+  font-family: "Kurdis-CondensedBold", sans-serif;
   font-size: 52px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -2999,6 +3021,15 @@ section.events .events-cols .events-btn {
     margin: 0 15px;
   }
 }
+.expert-diagonal-white .expert-socials img.social-line {
+  max-width: 120px;
+  max-height: 120px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  transform: skewX(20deg);
+}
 .expert-diagonal-white .diagonal-hero {
   height: 63px;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0) 51%, #fff 25%);
@@ -3204,7 +3235,7 @@ section.events .events-cols .events-btn {
   }
 }
 .academy-page-hero .academy-page-hero-inner .academy-hero-content .hero-header {
-  font-family: "Kurdis-CondensedBold", sans-serif;
+  font-family: "Kurdis-CondensedExtraBold", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   line-height: 1;
@@ -3326,7 +3357,7 @@ section.events .events-cols .events-btn {
   }
 }
 .academy-below-hero .support-title {
-  max-width: 590px;
+  max-width: 640px;
   text-align: center;
   margin: 0 auto 40px;
 }
@@ -3341,7 +3372,7 @@ section.events .events-cols .events-btn {
   font-size: 19px;
   color: #3D3D3D;
   text-transform: uppercase;
-  width: 19%;
+  width: 20%;
   max-width: 70px;
   height: 70px;
   border: 1px solid #CADFEA;
@@ -3349,7 +3380,7 @@ section.events .events-cols .events-btn {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px 40px;
 }
 @media only screen and (max-width: 768px) {
   .academy-below-hero .academy-courses-cols .academy-col-box {
@@ -4011,4 +4042,52 @@ div.hero-content > div.q-author {
   100% {
     transform: translateY(0);
   }
+}
+/** Video lightbox **/
+.popup {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.video-thumbnail {
+  width: 100%;
+}
+
+.popup .popupvideo {
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8705882353);
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.popupvideo.show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 50.25%;
+  height: 0;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.closeme {
+  font-size: 18px;
+  margin: 5px auto 0;
+  text-align: center;
+  color: red;
 }/*# sourceMappingURL=styles.css.map */
