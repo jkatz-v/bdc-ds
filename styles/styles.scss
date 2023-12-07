@@ -684,6 +684,7 @@ $white: #ffffff;
   .w-hero-inner {
     display: flex;
     justify-content: space-between;
+
     @media only screen and (max-width: 767px) {
       flex-wrap: wrap;
     }
@@ -720,12 +721,8 @@ $white: #ffffff;
     }
 
     .w-hero-video {
-      margin-top: -120px;
-      margin-left: -50px;
-      padding-top: 10vh;
-      padding-bottom: 8px;
-      position: relative;
-      z-index:10;
+      position: absolute;
+      z-index:1;
       @media only screen and (max-width: 1024px) {
         margin-top: -130px;
         width: 45%;
@@ -3702,4 +3699,40 @@ div.hero-content > div.q-author {
     margin: 5px auto 0;
     text-align: center;
     color: red;
+}
+
+.hero-video-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+  font-family: "Kurdis-CondensedBold", sans-serif;
+  font-size: medium;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  margin-right: 10%;
+  
+  .watch {
+    // need these to center the line on the video
+    // with the words and the center of the video
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  img {
+    margin-left: 40%;
+  }
+
+  .watch-the-video {
+    z-index: 100;
+  }
+  
+  .watch-video-line {
+    width: 80%;
+    height: 4px;
+    margin-left: 0%;
+  }
+
 }
