@@ -172,7 +172,7 @@ function makeItPopVideo() {
 }
 
 function hideMe() {
-  var popup = document.getElementByClassName("popuptext");
+  var popup = document.getElementsByClassName("popuptext");
   popup.classList.toggle("hide");
 }
 
@@ -187,8 +187,8 @@ let activated = false;
 window.addEventListener("scroll", () => {
   /*If the page is crolled to the containers element 
   and the counters are not activated */
-  if(
-    pageYOffset > container.offsetTop - container.offsetHeight - 800
+  if (
+    scrollY > container.offsetTop - container.offsetHeight - 800
     && activated === false
   ) {
     counters.forEach(counter => {
@@ -197,7 +197,7 @@ window.addEventListener("scroll", () => {
 
       function updateCount() {
         const target = parseInt(counter.dataset.count);
-        if(count < target) {
+        if (count < target) {
           count++;
           counter.innerText = count;
           setTimeout(updateCount, 10);
@@ -209,8 +209,8 @@ window.addEventListener("scroll", () => {
       activated = true;
     });
   } else if (
-    pageYOffset < container.offsetTop - container.offsetHeight - 500
-    || pageYOffset === 0
+    scrollY < container.offsetTop - container.offsetHeight - 500
+    || scrollY === 0
     && activated === true
   ) {
     counters.forEach(counter => {
