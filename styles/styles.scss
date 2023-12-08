@@ -2725,9 +2725,23 @@ section.events {
       display: flex;
       justify-content: center;
       width: 100%;
+      position: relative;
+
+      a {
+        position: relative;
+       /* &:after {
+          content: url(../imgs/social-lines.svg);
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: -30%;
+          left: 0;
+          right: 0;
+        } */
+      }
     }
 
-    img {
+    img.social-icons {
       height: 25px;
       max-width: 25px;
       margin: 0 20px;
@@ -2737,14 +2751,12 @@ section.events {
       }
     }
 
-    img.social-line {
-      max-width: 120px;
-      max-height: 120px;
+    img.social-lines {
       position: absolute;
+      width: 100px;
+      height: 100px;
       top: 0;
       bottom: 0;
-      height: 100%;
-      transform: skewX(20deg);
      }
     
   }

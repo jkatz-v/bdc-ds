@@ -3009,26 +3009,37 @@ section.events .events-cols .events-btn {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
-.expert-diagonal-white .expert-socials img {
+.expert-diagonal-white .expert-socials .socials-inner a {
+  position: relative;
+  /* &:after {
+     content: url(../imgs/social-lines.svg);
+     position: absolute;
+     width: 10px;
+     height: 10px;
+     top: -30%;
+     left: 0;
+     right: 0;
+   } */
+}
+.expert-diagonal-white .expert-socials img.social-icons {
   height: 25px;
   max-width: 25px;
   margin: 0 20px;
   position: relative;
 }
 @media only screen and (max-width: 460px) {
-  .expert-diagonal-white .expert-socials img {
+  .expert-diagonal-white .expert-socials img.social-icons {
     margin: 0 15px;
   }
 }
-.expert-diagonal-white .expert-socials img.social-line {
-  max-width: 120px;
-  max-height: 120px;
+.expert-diagonal-white .expert-socials img.social-lines {
   position: absolute;
+  width: 100px;
+  height: 100px;
   top: 0;
   bottom: 0;
-  height: 100%;
-  transform: skewX(20deg);
 }
 .expert-diagonal-white .diagonal-hero {
   height: 63px;
